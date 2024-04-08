@@ -70,3 +70,13 @@ What is the equivalent value of the hexadecimal background-color, in HSL?
 (format of your answer should be: `hsl(<VALUES>);`, example: `hsl(241, 23%, 24%);` following by a new line)
 
 File: `8-hsl`
+
+## 9. The max-width of the container
+Go to https://dev-tools.hbtn.info/
+
+What is the max-width for the first `.container` in the section “About”? (your browser width must be between 1250px and 1440px and with a zoom at 100%)
+
+(format of your answer should be `max-width: <VALUE>;`, example: max-width: 670px)
+
+File: `9-max_width`
+
