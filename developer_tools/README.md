@@ -59,3 +59,14 @@ Go to https://dev-tools.hbtn.info/
 How many times click events are referenced in JavaScript files?
 
 File: `7-number_of_listeners`
+
+## 8. What is the HSL code
+Go to https://dev-tools.hbtn.info/
+
+Select the primary button “Send”
+
+What is the equivalent value of the hexadecimal background-color, in HSL?
+
+(format of your answer should be: `hsl(<VALUES>);`, example: `hsl(241, 23%, 24%);` following by a new line)
+
+File: `8-hsl`
