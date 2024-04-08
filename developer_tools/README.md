@@ -96,3 +96,9 @@ Answer file must contain the value in Byte (example: 6144 for 6KB)
 
 File: `11-coverage`
 
+## 12. Emulate the print version of the webpage
+Go to https://dev-tools.hbtn.info/
+
+Under Rendering, change the CSS media type emulation to “print” and take a screenshot of the home page.
+
+File: `12-print_version.png`
