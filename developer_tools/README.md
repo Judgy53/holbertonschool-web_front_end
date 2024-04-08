@@ -11,6 +11,7 @@ File: `0-responsive_device.png`
 Go to https://dev-tools.hbtn.info/
 
 Change the background-color of the body to use `#4233bd` and take a screenshot of the PORTFOLIO section
+
 File: `1-change_bg_color.png`
 
 
@@ -18,6 +19,7 @@ File: `1-change_bg_color.png`
 Go to https://dev-tools.hbtn.info/
 
 Force the hover state of the `cake` block in the section Portfolio and Take a screenshot of it.
+
 File: `2-pathways_menu.png`
 
 
@@ -25,4 +27,5 @@ File: `2-pathways_menu.png`
 Go to https://dev-tools.hbtn.info/
 
 Select the Download me! and copy all the CSS styling that is applied on this button.
+
 File: `3-button_styles`
