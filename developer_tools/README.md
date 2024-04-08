@@ -102,3 +102,11 @@ Go to https://dev-tools.hbtn.info/
 Under Rendering, change the CSS media type emulation to “print” and take a screenshot of the home page.
 
 File: `12-print_version.png`
+
+## 13. Using the console
+Go to https://dev-tools.hbtn.info/
+
+Select the Avatar image in the header and type $0 in the console. Enter. What does it return?
+
+File: `13-logo_dollar0`
+
