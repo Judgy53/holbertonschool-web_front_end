@@ -7,7 +7,7 @@ Take a screenshot of [this website](https://dev-tools.hbtn.info/) using the devi
 
 File: `0-responsive_device.png`
 
-## Change the background color 
+## 1. Change the background color 
 Go to https://dev-tools.hbtn.info/
 
 Change the background-color of the body to use `#4233bd` and take a screenshot of the PORTFOLIO section
