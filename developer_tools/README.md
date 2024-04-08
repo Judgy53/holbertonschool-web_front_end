@@ -110,3 +110,11 @@ Select the Avatar image in the header and type $0 in the console. Enter. What do
 
 File: `13-logo_dollar0`
 
+## 14. Write code in the console
+Go to https://dev-tools.hbtn.info/
+
+Write in the console `console.log(document.title)`, what is returned?
+
+File: `14-doc_title`
+
+
