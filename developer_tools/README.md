@@ -12,3 +12,10 @@ Go to https://dev-tools.hbtn.info/
 
 Change the background-color of the body to use `#4233bd` and take a screenshot of the PORTFOLIO section
 File: `1-change_bg_color.png`
+
+
+## 2. Force element state
+Go to https://dev-tools.hbtn.info/
+
+Force the hover state of the `cake` block in the section Portfolio and Take a screenshot of it
+File: `2-pathways_menu.png`
