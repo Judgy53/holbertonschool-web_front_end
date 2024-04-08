@@ -87,3 +87,12 @@ Switch the sections of “About” and “Portfolio”. Take a screenshot of it
 
 File: `10-moved_around.png`
 
+## 11. Coverage
+Go to https://dev-tools.hbtn.info/
+
+How big, in bytes, is the `freelancer.css` file?
+
+Answer file must contain the value in Byte (example: 6144 for 6KB)
+
+File: `11-coverage`
+
