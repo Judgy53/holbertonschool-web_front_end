@@ -35,3 +35,9 @@ Go to https://dev-tools.hbtn.info/
 -  Screenshot all buttons that changed and merge it to one image
 
 File: `4-new_buttons.png`
+
+## 5. Remove part of the website
+Go to https://dev-tools.hbtn.info/
+- Remove the div of the “cake” box in the section Portfolio
+- Take a screenshot of it
+File: `5-deleted_elements.png`
