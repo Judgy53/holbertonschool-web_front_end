@@ -53,3 +53,9 @@ Which file is coming from that declaration?
 
 File: `6-declaration_file`
 
+## 7. How many listeners
+Go to https://dev-tools.hbtn.info/
+
+How many times click events are referenced in JavaScript files?
+
+File: `7-number_of_listeners`
