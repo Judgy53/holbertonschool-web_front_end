@@ -17,5 +17,12 @@ File: `1-change_bg_color.png`
 ## 2. Force element state
 Go to https://dev-tools.hbtn.info/
 
-Force the hover state of the `cake` block in the section Portfolio and Take a screenshot of it
+Force the hover state of the `cake` block in the section Portfolio and Take a screenshot of it.
 File: `2-pathways_menu.png`
+
+
+## 3. Copy all the styles of the button
+Go to https://dev-tools.hbtn.info/
+
+Select the Download me! and copy all the CSS styling that is applied on this button.
+File: `3-button_styles`
