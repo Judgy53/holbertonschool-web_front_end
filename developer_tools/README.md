@@ -80,3 +80,10 @@ What is the max-width for the first `.container` in the section “About”? (yo
 
 File: `9-max_width`
 
+## 10. Moving around
+Go to https://dev-tools.hbtn.info/
+
+Switch the sections of “About” and “Portfolio”. Take a screenshot of it
+
+File: `10-moved_around.png`
+
