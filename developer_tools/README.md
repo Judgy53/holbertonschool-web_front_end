@@ -117,4 +117,17 @@ Write in the console `console.log(document.title)`, what is returned?
 
 File: `14-doc_title`
 
+## 15. Holberton web framework
+Go to https://dev-tools.hbtn.info/
+
+Which front-end framework could we guess this page is using?
+
+In your answer file only put the letter of the multiple choice answer from below:
+
+    A. React JS
+    B. Material Design
+    C. Bootstrap
+    D. Angular JS
+
+File: `15-hbtn_framework`
 
