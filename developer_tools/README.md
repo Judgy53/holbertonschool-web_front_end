@@ -214,3 +214,12 @@ In your answer file only put the letter of the multiple choice answer from below
     C. Background and foreground colors do not have a sufficient contrast ratio.
 
 File: `25-contrast_issue`
+
+## 26. No alt
+Go to https://dev-tools.hbtn.info/
+
+Which classes are on the images that have no alt attribute?
+
+Your answer file must contains all classes, example: .my_class.my_second if 2 classes
+
+File: `26-no_alt`
