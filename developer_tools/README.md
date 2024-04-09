@@ -223,3 +223,17 @@ Which classes are on the images that have no alt attribute?
 Your answer file must contains all classes, example: .my_class.my_second if 2 classes
 
 File: `26-no_alt`
+
+## 27. Best practices
+Go to https://dev-tools.hbtn.info/
+
+Which attribute is missing on all the links with the target _blank?
+
+In your answer file only put the letter of the multiple choice answer from below:
+
+    A. rel="noopener"
+    B. rel="noreferrer"
+    C. A and B
+
+File: `27-missing_attr`
+
