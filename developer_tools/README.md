@@ -149,3 +149,9 @@ Take a screenshot of it
 
 File: `17-requests.png`
 
+18. Number of CSS files
+Go to https://dev-tools.hbtn.info/
+
+How many CSS resources are loaded on this page?
+
+File: `18-css_loaded`
