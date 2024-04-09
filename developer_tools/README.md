@@ -291,3 +291,12 @@ Which organization issued the SSL certificate for this page?
 
 File: `33-ssl_cert`
 
+## 34. Expiration date
+Go to https://dev-tools.hbtn.info/
+
+When does the SSL certificate expire?
+
+Take a screenshot of it
+
+File: `34-ssl_expiration.png`
+
