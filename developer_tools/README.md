@@ -170,4 +170,9 @@ What is the type value of the favicon image?
 
 File: `20-favicon_type`
 
+## 21. Font library
+Go to https://dev-tools.hbtn.info/
 
+Holberton School website uses a font library for their icons, which one is it?
+
+File: `21-hbtn_font_lib`
