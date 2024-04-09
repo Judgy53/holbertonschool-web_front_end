@@ -193,3 +193,11 @@ Take a screenshot of it
 
 File: `23-performance_audit.png`
 
+## 24. Static assets
+Go to https://dev-tools.hbtn.info/
+
+How many static assets need a better cache policy?
+
+Take a screenshot of it
+
+File: `24-static_assets_audit.png`
