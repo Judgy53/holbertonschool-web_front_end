@@ -202,7 +202,7 @@ Take a screenshot of it
 
 File: `24-static_assets_audit.png`
 
-25. Accessibility
+## 25. Accessibility
 Go to https://dev-tools.hbtn.info/
 
 When you run an accessibility audit, what is the contrast issue?
