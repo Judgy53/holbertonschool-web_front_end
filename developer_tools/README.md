@@ -131,3 +131,11 @@ In your answer file only put the letter of the multiple choice answer from below
 
 File: `15-hbtn_framework`
 
+## 16. Homepage weight
+Go to https://dev-tools.hbtn.info/
+
+What is the total weight of the page (with all the elements)?
+
+Take a screenshot of it
+
+File: `16-weight.png`
