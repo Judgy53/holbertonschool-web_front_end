@@ -201,3 +201,16 @@ How many static assets need a better cache policy?
 Take a screenshot of it
 
 File: `24-static_assets_audit.png`
+
+25. Accessibility
+Go to https://dev-tools.hbtn.info/
+
+When you run an accessibility audit, what is the contrast issue?
+
+In your answer file only put the letter of the multiple choice answer from below:
+
+    A. Image elements do not have [alt] attributes
+    B. Links do not have a discernible name
+    C. Background and foreground colors do not have a sufficient contrast ratio.
+
+File: `25-contrast_issue`
