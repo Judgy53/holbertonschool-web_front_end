@@ -256,3 +256,13 @@ The sources panel allow you to edit files, add breakpoints to analyse your JavaS
 - Take a screenshot of the result in your console
 
 File: `29-how_many_colors.png`
+
+## 30. Block CSS files
+Go to https://dev-tools.hbtn.info/
+
+Block all CSS requests
+
+Take a screenshot of it
+
+File: `30-no_css.png`
+
