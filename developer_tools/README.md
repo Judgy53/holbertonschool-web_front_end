@@ -155,3 +155,11 @@ Go to https://dev-tools.hbtn.info/
 How many CSS resources are loaded on this page?
 
 File: `18-css_loaded`
+
+## 19. Number of images
+Go to https://dev-tools.hbtn.info/
+
+How many image resources are loaded on this page?
+
+File: `19-images_loaded`
+
