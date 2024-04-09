@@ -275,3 +275,10 @@ What is the only key present in the session storage for this page?
 
 File: `31-session_storage_key`
 
+## 32. Service workers
+Go to https://dev-tools.hbtn.info/
+
+Does this page have any service workers? `Yes` or `No`
+
+File: `32-service_workers`
+
