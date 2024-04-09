@@ -237,3 +237,12 @@ In your answer file only put the letter of the multiple choice answer from below
 
 File: `27-missing_attr`
 
+## 28. SEO
+Go to https://dev-tools.hbtn.info/
+
+Which `<a>` links don’t have enough text description?
+
+Take a screenshot of it
+
+File: `28-unclear_desc.png`
+
