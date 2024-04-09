@@ -246,3 +246,13 @@ Take a screenshot of it
 
 File: `28-unclear_desc.png`
 
+## 29. Sources
+Go to https://dev-tools.hbtn.info/
+
+The sources panel allow you to edit files, add breakpoints to analyse your JavaScript code and create snippets.
+- Create a new snippet called allcolors.js
+- Copy-paste the code on [this page](https://github.com/bgrins/devtools-snippets/blob/master/snippets/allcolors/allcolors.js)
+- Run the code
+- Take a screenshot of the result in your console
+
+File: `29-how_many_colors.png`
