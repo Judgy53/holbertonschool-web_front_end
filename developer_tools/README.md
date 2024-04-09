@@ -282,3 +282,12 @@ Does this page have any service workers? `Yes` or `No`
 
 File: `32-service_workers`
 
+## 33. Security
+Go to https://dev-tools.hbtn.info/
+
+The security panel allows you to make sure HTTS is properly implement on a webpage.
+
+Which organization issued the SSL certificate for this page?
+
+File: `33-ssl_cert`
+
