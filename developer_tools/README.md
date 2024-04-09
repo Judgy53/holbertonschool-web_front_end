@@ -176,3 +176,10 @@ Go to https://dev-tools.hbtn.info/
 Holberton School website uses a font library for their icons, which one is it?
 
 File: `21-hbtn_font_lib`
+
+## 22. XHR calls
+Go to https://dev-tools.hbtn.info/
+
+What is the name of the resource that generates 1 XHR calls?
+
+File: `22-xhr_calls`
