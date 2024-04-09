@@ -139,3 +139,13 @@ What is the total weight of the page (with all the elements)?
 Take a screenshot of it
 
 File: `16-weight.png`
+
+## 17. Number of requests
+Go to https://dev-tools.hbtn.info/
+
+What is the number of requests done when accessing this page?
+
+Take a screenshot of it
+
+File: `17-requests.png`
+
