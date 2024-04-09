@@ -183,3 +183,13 @@ Go to https://dev-tools.hbtn.info/
 What is the name of the resource that generates 1 XHR calls?
 
 File: `22-xhr_calls`
+
+## 23. Audits panel
+Go to https://dev-tools.hbtn.info/
+
+What is the notation for Performance (for desktop mode and no throttling - also called Lighthouse)?
+
+Take a screenshot of it
+
+File: `23-performance_audit.png`
+
