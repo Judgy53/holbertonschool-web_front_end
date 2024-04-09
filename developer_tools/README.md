@@ -163,3 +163,11 @@ How many image resources are loaded on this page?
 
 File: `19-images_loaded`
 
+## 20. Favicon image type
+Go to https://dev-tools.hbtn.info/
+
+What is the type value of the favicon image?
+
+File: `20-favicon_type`
+
+
