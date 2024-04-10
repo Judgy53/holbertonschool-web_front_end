@@ -33,6 +33,7 @@ Write a Sass file that assigns:
 - The background color #6D6D6D to the HTML tags body and h2
 - You must use 2 Sass variables
 
+Usage:
 ```shell
 $ sass 2-color_variables.scss | tail -n +2
 body {
@@ -46,3 +47,22 @@ h2 {
   background-color: #6D6D6D; }
 ```
 File: `2-color_variables.scss`
+
+## 3. Nested tag
+Write a Sass file that assigns:
+- No margin or padding in body tags
+- Margin 10px to all of the p tags inside body tags
+- You must use nested declarations
+
+Usage:
+```shell
+$ sass 3-nested_tag.scss | tail -n +2
+body {
+  margin: 0px;
+  padding: 0px; }
+  body p {
+    margin: 10px; }
+```
+
+File: `3-nested_tag.scss`
+
