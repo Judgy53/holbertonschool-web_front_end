@@ -196,3 +196,29 @@ $ sass 10-import_colors.scss | tail -n +3
   color: #0000FF; }
 ``` 
 File: `10-import_colors.scss`, `10-colors.scss`
+
+## 11. For each 
+Write a Sass file that creates a class for each name in the list $list-names and assigns the background image based on the name (example below):
+- You must use @import
+- You must use @each statement
+
+```shell
+$ cat 11-photos.scss 
+/* All names */
+$list-names: julien john sam damian;
+$ sass 11-loop_photos.scss | tail -n +3
+.photo-julien {
+  background: image-url("photos/julien.jpg") no-repeat; }
+
+.photo-john {
+  background: image-url("photos/john.jpg") no-repeat; }
+
+.photo-sam {
+  background: image-url("photos/sam.jpg") no-repeat; }
+
+.photo-damian {
+  background: image-url("photos/damian.jpg") no-repeat; }
+```
+
+File: `11-loop_photos.scss`, `11-photos.scss`
+
