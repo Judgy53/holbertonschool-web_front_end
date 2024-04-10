@@ -1,0 +1,9 @@
+/* Use nested declaration to set text color on body and .red */
+
+body {
+    color: #3D3D3D;
+
+    .red {
+        color: #FF0000;
+    }
+}

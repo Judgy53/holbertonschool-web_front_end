@@ -66,3 +66,19 @@ body {
 
 File: `3-nested_tag.scss`
 
+## 4. Nested class
+Write a Sass file that assigns:
+- Text color #3D3D3D to elements inside body tags
+- Text color #FF0000 to any elements of class .red inside body tags
+- You must use nested declarations
+
+```shell
+$ sass 4-nested_class.scss | tail -n +2
+body {
+  color: #3D3D3D; }
+  body .red {
+    color: #FF0000; }
+$
+```
+File: `4-nested_class.scss`
+
