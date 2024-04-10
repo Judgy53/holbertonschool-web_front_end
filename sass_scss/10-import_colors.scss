@@ -1,0 +1,15 @@
+/* Set .red, .green and .blue text color with colors imported from 10-colors */
+
+@import '10-colors';
+
+.red {
+    color: $red; 
+}
+  
+  .green {
+    color: $green; 
+}
+  
+  .blue {
+    color: $blue; 
+}
