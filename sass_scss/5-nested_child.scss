@@ -1,0 +1,9 @@
+/* Use nested declaration to set text color on body and direct children of body wih class red */
+
+body {
+    color: #3D3D3D;
+
+    > .red {
+        color: #FF0000;
+    }
+}

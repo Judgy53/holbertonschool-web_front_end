@@ -72,6 +72,7 @@ Write a Sass file that assigns:
 - Text color #FF0000 to any elements of class .red inside body tags
 - You must use nested declarations
 
+Usage:
 ```shell
 $ sass 4-nested_class.scss | tail -n +2
 body {
@@ -81,4 +82,21 @@ body {
 $
 ```
 File: `4-nested_class.scss`
+
+## 5. Nested child
+Write a Sass file that assigns:
+- Text color #3D3D3D to elements inside body tags
+- Text color #FF0000 to any elements of class .red that are the first children of the body
+- You must use nested declarations
+
+Usage:
+```shell
+$ sass 5-nested_child.scss | tail -n +2
+body {
+  color: #3D3D3D; }
+  body > .red {
+    color: #FF0000; }
+``` 
+
+File: `5-nested_child.scss`
 
