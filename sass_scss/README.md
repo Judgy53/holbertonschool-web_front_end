@@ -222,3 +222,28 @@ $ sass 11-loop_photos.scss | tail -n +3
 
 File: `11-loop_photos.scss`, `11-photos.scss`
 
+## 12. Loop Headers
+Write a Sass file that creates H* tags, where ‘*’ is the size of the font used.
+- h1 must have font size equal to 1px, h2 must have font size equal to 2px, etc.
+- You must create H* tags from 1 to 5
+- You must use @for statement
+
+```shell
+$ sass 12-loop_header.scss | tail -n +2
+h1 {
+  font-size: 1px; }
+
+h2 {
+  font-size: 2px; }
+
+h3 {
+  font-size: 3px; }
+
+h4 {
+  font-size: 4px; }
+
+h5 {
+  font-size: 5px; }
+```
+File: `12-loop_header.scss`
+

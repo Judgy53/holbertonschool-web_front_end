@@ -1,0 +1,7 @@
+/* Create font-size for all headers (h1 to h5) using @for */
+
+@for $i from 1 through 5 {
+    h#{$i} {
+        font-size: #{$i}px;
+    }
+}
