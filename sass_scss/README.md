@@ -134,3 +134,21 @@ body {
 ```
 File: `7-nested_deeper.scss`
 
+## 8. Margin mixin
+Write a Sass file that assigns:
+- Margin left and right at 10px to body tags
+- Margin left and right at 15px to div tags
+- You must use a mixin
+
+```shell
+$ sass 8-mixin_margins.scss | tail -n +2
+body {
+  margin-left: 10px;
+  margin-right: 10px; }
+
+div {
+  margin-left: 15px;
+  margin-right: 15px; }
+```
+File: `8-mixin_margins.scss`
+

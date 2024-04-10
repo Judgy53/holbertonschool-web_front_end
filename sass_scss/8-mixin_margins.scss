@@ -1,0 +1,14 @@
+/* Set margin right and left on body and div using mixin*/
+
+@mixin margin-inline($length) {
+    margin-left: $length;
+    margin-right: $length;
+}
+
+body {
+    @include margin-inline(10px);
+}
+
+div {
+    @include margin-inline(15px);
+}
