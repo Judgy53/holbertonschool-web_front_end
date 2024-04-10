@@ -1,0 +1,15 @@
+/* Set font size for .info, and also for .success and .warning using extend */
+
+.info {
+    font-size: 12px;
+}
+
+.success {
+    @extend .info;
+    color: #00FF00;
+}
+
+.warning {
+    @extend .info;
+    color: #FF0000;
+}
