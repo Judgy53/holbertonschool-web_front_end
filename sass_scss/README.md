@@ -27,3 +27,22 @@ p {
 
 File: `1-color_variable.scss`
 
+## 2. Colors
+Write a Sass file that assigns:
+- The text color #3D3D3D to the HTML tags body and p
+- The background color #6D6D6D to the HTML tags body and h2
+- You must use 2 Sass variables
+
+```shell
+$ sass 2-color_variables.scss | tail -n +2
+body {
+  color: #3D3D3D;
+  background-color: #6D6D6D; }
+
+p {
+  color: #3D3D3D; }
+
+h2 {
+  background-color: #6D6D6D; }
+```
+File: `2-color_variables.scss`
