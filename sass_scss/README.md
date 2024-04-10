@@ -100,3 +100,18 @@ body {
 
 File: `5-nested_child.scss`
 
+## 6. Nested hover
+Write a Sass file that assigns:
+- Text color #FF0000 to button tags
+- When the user hovers over button tags, text color should change to #00FF00
+- You must use nested declarations
+
+Usage:
+```shell
+$ sass 6-nested_hover.scss | tail -n +2
+button {
+  color: #FF0000; }
+  button:hover {
+    color: #00FF00; }
+```
+File: `6-nested_hover.scss`
