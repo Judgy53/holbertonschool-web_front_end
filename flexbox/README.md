@@ -326,3 +326,12 @@ Target the `after` pseudo element of the `last-child` on the `li` inside `tag-li
 - Property: `content`, Value: `empty`
 
 File: `13-article.html`, `13-styles.css`
+
+## 14. Add the share social icons
+In your `14-article.html`, inside the `post-share` div
+- Copy paste the `social nav` list (already existing in the footer) inside
+- Remove the `li` with Instagram (3rd one)
+- Replace the href in the links with a default value (`#`)
+
+File: `14-article.html`, `14-styles.css`
+
