@@ -133,3 +133,11 @@ In `6-styles.css`, inside the `/* Navbar` section
 
 File: `6-index.html`, `6-styles.css`
 
+## 7. Align center logo and navbar
+Using the files from the previous task for this task:
+
+In `7-styles.css`, inside the `/* Header` section, in the `header-container` class selector, set the property `align-items` to `center`
+
+File: `7-index.html`, `7-styles.css`
+
+
