@@ -24,3 +24,25 @@ In the `/* Grid` section within your CSS
 
 File: `0-index.html`, `0-styles.css`
 
+## 1. Add new classes on sections
+Using the files from the previous task as the base for this task:
+
+In the outermost section tag for `services`
+- Add the class `section-services`
+
+In the outermost section tag for `works`
+- Add the class `section-works`
+
+In the outermost section tag for `about`
+- Add the class `section-about-us`
+
+In the outermost section tag for `latest_news`
+- Add the class `section-latest-news`
+
+In the outermost section tag for `testimonial`
+- Add the class `section-testimonial`
+
+In the outermost section tag for `contact`
+- Add the class `section-contact`
+
+File: `1-index.html`, `1-styles.css`
