@@ -183,3 +183,43 @@ Below, target `.section-category` inside `section-hero` class
 
 File: `10-article.html`, `10-styles.css`
 
+## 11. Update the new hero banner
+In `11-article.html` in the Hero section
+- Add the `hero-article` class on the `<header>` which is in `<main>`
+- Add this `background-image` (pic-article-02.jpg) as an inline style still on the `<header>`
+- Inside the section with `section-inner` class
+    - Add a `span` with the class `section-category` and the text `Digital Life`
+    - Below, add an h1 with the class `section-title` and the following text `Ut alios omittam, hunc appello, quem ille unum secutus est`
+
+At the end of 11-styles.css, create a new comment section
+```css
+/*** ARTICLE PAGE ***/
+/* Section HERO (article)
+    ============================= */
+```
+Target the `hero-article` class
+- Property: `background-size`, Value: `150rem 100rem`
+- Property: `background-position`, Value: `50% 0`
+
+Target the `before` pseudo element of `hero-article` class
+- Property: `content`, Value: `empty`
+- Property: `background`, Value: `rgba(0, 0, 0, 0.8)`
+- Property: `position`, Value: `absolute`
+- Property: `top`, Value: `0`
+- Property: `right`, Value: `0`
+- Property: `left`, Value: `0`
+- Property: `bottom`, Value: `0`
+- Property: `z-index`, Value: `0`
+
+Target the `section-inner` class inside the `hero-article` class
+- Property: `text-align`, Value: `center`
+- Property: `align-items`, Value: `center`
+- Property: `min-height`, Value: `40vh`
+
+Target the `section-body` class inside the `hero-article` class
+- Property: `position`, Value: `relative`
+- Property: `padding`, Value: `7rem 0 0`
+- Property: `z-index`, Value: `2`
+
+File: `11-article.html`, `11-styles.css`
+
