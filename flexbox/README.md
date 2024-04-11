@@ -67,3 +67,16 @@ The Latest news should appear in a reverse order.
 
 File: `2-index.html`, `2-styles.css`
 
+## 3. Simplify services list
+Using the files from the previous task for this task:
+
+`flex-wrap` is a property that can force the flex items to be in one or multiple lines. Learn more about it [here](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap).
+
+In the `Services section` of `3-index.html`, remove the second `ul` and put the 3 `li` elements under the first `ul`
+
+Now, in your CSS file, before `/*** 4. CARD ***/`, add a new comment: `/* Section SERVICES ============================= */`
+
+Under that comment section, add a new selector targeting the `row` class inside the `section-services` class
+- Property: `flex-wrap`, Value: `wrap`
+File: `3-index.html`, `3-styles.css`
+
