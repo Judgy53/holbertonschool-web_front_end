@@ -8,3 +8,6 @@ Project where we learn how to use Chrome's dev tools
 
 ## sass_scss
 Project where we learn how to use Sass
+
+## flexbox
+Project where we learn how to use flexbox in css
