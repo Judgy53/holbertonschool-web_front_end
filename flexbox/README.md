@@ -253,3 +253,76 @@ In your 12-styles.css:
     - Property: `min-width`, Value: `20%`
 
 File: `12-article.html`, `12-styles.css`
+
+## 13. The meta list inside the aside section
+In your 13-article.html
+
+- Create an unordered list inside the `post-meta` div with the classes `post-meta-list` and `row`
+    - Create a first `<li>` with the class `post-meta-author`
+        - Create the HTML tag that show a stronger importance
+            - Text: `Written by:`
+        - Create a link
+            - Href: `#`
+            - Rel: `author`
+            - Text: `William Attaway`
+    - Create a second `<li>` with the class `post-meta-date`
+        - Create the HTML tag that show a stronger importance
+            - Text: `Posted on:`
+        - Use the HTML tag for date / time - Datetime: `2019-10` - Text: `October 2019`
+    - Create a third `<li>` with the class `post-meta-tag`
+        - Create the HTML tag that show a stronger importance
+            - Text: `Tags:`
+        - Create an unordered list with the class `tag-list`
+            - First `<li>` contain a link
+                - Href: `#`
+                - Rel: `tag`
+                - Text: `Web Design`
+            - Second `<li>` contain a link
+                - Href: `#`
+                - Rel: `tag`
+                - Text: `UX`
+
+Update 13-styles.css with this information
+
+Add a separator comment
+```css
+/* Post Meta
+    ============================= */
+```
+Target the `post-meta-list `class
+- Property: `flex-direction`, Value: `column`
+
+Target the strong tag inside post-meta-list class
+- Property: `color`, Value: point to the variable `color-primary`
+- Property: `font-size`, Value: point to the variable `font-size-small`
+- Property: `text-transform`, Value: `uppercase`
+- Property: `display`, Value: `block`
+
+Target all classes that start with `post-meta-` inside `post-meta-list` class
+- Property: `margin-bottom`, Value: `1rem`
+- Property: `padding-bottom`, Value: `1rem`
+- Property: `border-bottom`, Values: `0.2rem solid` and point to the `color-light-grey` variable
+
+Target the last child of all classes that start with `post-meta` inside `post-meta-list` class
+- Property: `border`, Value: `none`
+- Property: `margin-bottom`, Value: `3rem`
+
+Add a separator comment
+```css
+/* Tag list
+    ============================= */
+```
+Target the `tag-list` class
+- Property: `padding`, Value: `0`
+- Property: `list-style`, Value: `none`
+
+Target all `li` inside the `tag-list` class
+- Property: `display`, Value: `inline`
+
+Target the `after` pseudo element on the `li` inside `tag-list` class
+- Property: `content`, Value: `", "` (space after the comma)
+
+Target the `after` pseudo element of the `last-child` on the `li` inside `tag-list` class
+- Property: `content`, Value: `empty`
+
+File: `13-article.html`, `13-styles.css`
