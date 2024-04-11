@@ -140,4 +140,16 @@ In `7-styles.css`, inside the `/* Header` section, in the `header-container` cla
 
 File: `7-index.html`, `7-styles.css`
 
+## 8. Simplify the hero banner
+Using the files from the previous task for this task
+
+In `8-styles.css`, inside the `/* Section HERO` section :
+- In the selector targeting `section-inner` class in `section-hero` class, remove the padding and replace with
+    - Property: `display`, Value: `flex`
+    - Property: `flex-direction`, Value: `column`
+    - Property: `align-items`, Value: `flex-start`
+    - Property: `justify-content`, Value: `center`
+    - Property: `min-height`, Value: `50vh`
+
+File: `8-index.html`, `8-styles.css`
 
