@@ -4,6 +4,22 @@ Project where we learn how to use flexbox in css
 
 Most tasks were done using a starter html `_starter.html` and a starter css `_starter.css` files. Starter html is replaced by `article.html` at Task 10
 
+- [0. Add display flex](#0-add-display-flex)
+- [1. Add new classes on sections](#1-add-new-classes-on-sections)
+- [2. Reverse order Latest news cards](#2-reverse-order-latest-news-cards)
+- [3. Simplify services list](#3-simplify-services-list)
+- [4. Playing around with the spacing between flex service items](#4-playing-around-with-the-spacing-between-flex-service-items)
+- [5. Flexify the header](#5-flexify-the-header)
+- [6. Flexify the navbar](#6-flexify-the-navbar)
+- [7. Align center logo and navbar](#7-align-center-logo-and-navbar)
+- [8. Simplify the hero banner](#8-simplify-the-hero-banner)
+- [9. Better alignment about us](#9-better-alignment-about-us)
+- [10. Creating an article by fixing issues and updating hero styles](#10-creating-an-article-by-fixing-issues-and-updating-hero-styles)
+- [11. Update the new hero banner](#11-update-the-new-hero-banner)
+- [12. The structure of the main article](#12-the-structure-of-the-main-article)
+- [13. The meta list inside the aside section](#13-the-meta-list-inside-the-aside-section)
+- [14. Add the share social icons](#14-add-the-share-social-icons)
+
 
 ## 0. Add display flex
 Use the starter HTML and CSS files from this task to task 10. Copy the contents of the starter files into the files that you need to produce and make the necessary changes according to the task description.
