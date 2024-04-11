@@ -223,3 +223,33 @@ Target the `section-body` class inside the `hero-article` class
 
 File: `11-article.html`, `11-styles.css`
 
+## 12. The structure of the main article
+In your `12-article.html` file, in the Hero section
+- After the header, create a `<div>` and set its class to `main-article` (this div will be siblings with the Hero section header)
+- Create a div inside the `main-article` div and set the class to `container`
+- Create a div with the class `post` inside the `container` div
+- Inside the `post` div:
+    - Create a new `article` with the class `post-content`
+    - Below the `post-content` article, add the comment `<!-- Aside section -->`
+    - Sibling to the `post-content` article and after the comment, create an `aside` with the class `post-aside`
+    - Inside `post-aside` aside, create 2 divs:
+        - The first with the class `post-meta`
+        - The second with the class `post-share`
+
+In your 12-styles.css:
+- Target the `main-article` class
+    - Property: `padding`, Value: `5rem 0`
+- Add the below separator comment
+```css
+/* Post
+    ============================= */
+```
+- Target the `post` class
+    - Property: `display`, Value: `flex`
+- Target the `post-content` class
+    - Property: `width`, Value: `100%`
+- Target the `post-aside` class
+    - Property: `order`, Value: `-1`
+    - Property: `min-width`, Value: `20%`
+
+File: `12-article.html`, `12-styles.css`
