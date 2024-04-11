@@ -2,7 +2,7 @@
 
 Project where we learn how to use flexbox in css
 
-Most tasks were done using a starter html `_starter.html` and a starter css `_starter.css` files
+Most tasks were done using a starter html `_starter.html` and a starter css `_starter.css` files. Starter html is replaced by `article.html` at Task 10
 
 
 ## 0. Add display flex
@@ -160,4 +160,26 @@ In `9-styles.css`, after the `/* Section SERVICES` section, create a `/* Section
 - Property: `align-self`, Value: `center`
 
 File: `9-index.html`, `9-styles.css`
+
+## 10. Creating an article by fixing issues and updating hero styles
+Using the CSS file from the previous task and `article.html`:
+
+In `10-styles.css`, inside the `/* Section HERO` section
+
+After the `.section-hero`, add a new `hero-homepage` class selector (you will need to add that class later in your html files)
+
+Move all declarations inside `section-hero` inside the new `hero-homepage` class selector
+
+Inside `section-hero` class selector
+- Property: `position`, Value: `relative`
+- Property: `margin-top`, Value: `-8.5rem`
+
+Below, target `.section-body` inside `section-hero` class
+- Property: `padding`, Value: `10rem 4rem`
+
+Below, target `.section-category` inside `section-hero` class
+- Property: `color`, Value: point to the variable `color-white`
+- Property: `text-transform`, Value: `uppercase`
+
+File: `10-article.html`, `10-styles.css`
 
