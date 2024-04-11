@@ -80,3 +80,19 @@ Under that comment section, add a new selector targeting the `row` class inside 
 - Property: `flex-wrap`, Value: `wrap`
 File: `3-index.html`, `3-styles.css`
 
+## 4. Playing around with the spacing between flex service items
+Using the files from the previous task for this task:
+
+In `4-styles.css` file, within the Grid section
+- In `.col-1-3` selector
+    - Replace the current width with `calc((100% / 3) - 2rem)`
+- In `.col-1-2` selector
+    - Replace the current width with `calc((100% / 2) - 2rem)`
+- In `[class*='col-']`
+    - Remove the padding declaration
+    - Set Property: `margin` to `1rem`
+- In `ul.row` declaration
+    - Replace the current margin with `-1rem`
+
+File: `4-index.html`, `4-styles.css`
+
