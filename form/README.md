@@ -188,3 +188,65 @@ From `03-styles.css`, create `04-styles.css`, after the `label` selector:
 }
 ```
 File: `04-article.html, 04-styles.css`
+
+## 4. add help messages
+From `04-article.html`, create `05-article.html`:
+- In each span with `form-field-container` class that contains an `input`
+    - After the input add an empty `<i>` with the class `form-field-icon`
+- In the first `fieldset`
+    - Inside the first div with `form-field` class, right after the closing `span` tag, add a paragraph
+        - Class: `form-help`
+        - Text: `First name should be at least 3 characters and only contains letters`
+    - Inside the second div with `form-field` class, right after the closing `span`tag, add a paragraph
+        - Class: `form-help`
+        - Text: `Last name should be at least 3 characters and only contains letters`
+    - Nothing is added in the third `form-field`
+- In the second `fieldset`
+    - Inside the first div with `form-field` class, right after the closing `span` tag, add a paragraph
+        - Class: `form-help`
+        - Text: `Title should be at least 4 characters and only contains letters`
+    - Inside the second div with `form-field` class, right after the closing `span` tag, add a paragraph
+        - Class: `form-help`
+        - Text: `Comment should be at least 10 characters`
+
+From `04-styles.css`, create `05-styles.css`:
+- Add a new separation
+```css
+/* Form group
+============================= */
+```
+- Target `form-group` class
+    - Property: `padding`, Value: `1rem`
+    - Property: `margin`, Value: `0`
+    - Property: `background-color`, Value: point to the variable `color-white`
+- Target the `focus-within` state of `form-group` class
+    - Property: `background-color`, Value: point to the `color-light-grey` (if it was not done in the previous task)
+    - Property: `transition`, Value: `.3s`
+- Add a new separation
+```css
+/* Form field
+============================= */
+```
+- Target `form-field-container` class
+    - Property: `position`, Value: `relative`
+- Target `form-field-icon` class
+    - Property: `font-style`, Value: `normal`
+- Add a new separation
+```css
+/* Form help
+============================= */
+```
+- Target `form-help` class inside `form-group` class
+    - Property: `margin`, Value: `0`
+    - Property: `line-height`, Value: `1.3`
+    - Property: `letter-spacing`, Value: `.019rem`
+    - Property: `color`, Value: point to the variable `color-dark-grey`
+    - Property: `font-size`, Value: point to the variable `font-size-small`
+    - Property: `max-height`, Value: `0`
+    - Property: `transition`, Value: `.3s`
+    - Property: `overflow`, Value: `hidden`
+- Target `form-help` class when `form-group` class has a `focus-within` state
+    - Property: `max-height`, Value: `20rem`
+    - Property: `margin`, Value: `.4rem 0 0`
+
+File: `05-article.html`, `05-styles.css`
