@@ -40,3 +40,24 @@ After the Tag list styles, create a new comment
 
 File: `01-article.html`, `01-styles.css`
 
+## 1. more comment basic structure
+From `01-article.html`, create `02-article.html`
+- In the form in the comment section
+    - Create a first `fieldset` with a `legend` that has the text `Your personal information` and the class `visually-hidden`
+        - In the `fieldset` create a first `div` with the classes `form-group` and `col-1-2`
+        - Sibling to the first `div`, create a second `div` with the classes `form-group` and `col-1-2`
+        - Sibling to the 2 `div`s create a third `div` with the classes `form-group` and `col-2-3`
+    - Sibling to the first `fieldset`, create a second `fieldset` with a `legend` that has the text `Your comment` and the class `visually-hidden`
+        - In the second `fieldset` create a first `div` with the classes `form-group` and `col-2-3`
+        - Sibling to the first `div` create a second `div` with the classes `form-group` and `col-2-3`
+        - Sibling to the 2 `div`s create a third `div` with the class `form-group`
+
+From `01-styles.css`, create `02-styles.css`
+- Target all `fieldset` and set the following rules
+    - flex display
+    - direction of flex is column
+    - justify the content at flex-start
+    - no border
+    - 0 0 2rem padding
+
+File: `02-article.html`, `02-styles.css`
