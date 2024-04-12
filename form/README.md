@@ -320,3 +320,68 @@ From `05-styles.css`, create `06-styles.css`:
         - Property: `background`, Value: point to the variable `color-white`
         - 
 File: `06-styles.css`, `06-article.html`
+## 6. add the search form
+From `06-article.html`, create `07-article.html`:
+- In the navigation, add a new `<li>` at the end. Also add the `nav-item` class on the `li`.
+    - Create a new `<form>` inside the `li`.
+        - Action attr: `#`
+        - Method attr: `post`
+        - Class: `form-search`
+        - Create a new `input`, type `search`
+            - Name attr: `q` (it’s common to name the search q (=query))
+            - Id attr: `search-input`
+            - Placeholder: `Search...`
+            - `aria-label="Search through site content"` (we will see in the accessibility module what is that attribute)
+        - Create a `button` with the class `search-button`
+            - Copy and paste the following code inside your button
+```html
+<svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="search-icon">
+    <title>
+    Search icon
+    </title>
+    <path d="M508.5 468.9L387.1 347.5c-2.3-2.3-5.3-3.5-8.5-3.5h-13.2c31.5-36.5 50.6-84 50.6-136C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c52 0 99.5-19.1 136-50.6v13.2c0 3.2 1.3 6.2 3.5 8.5l121.4 121.4c4.7 4.7 12.3 4.7 17 0l22.6-22.6c4.7-4.7 4.7-12.3 0-17zM208 368c-88.4 0-160-71.6-160-160S119.6 48 208 48s160 71.6 160 160-71.6 160-160 160z"/>
+</svg>
+```
+From `06-styles.css`, create `07-styles.css`:
+- At the end of the file, create a new comment separation
+```css
+        /*** SEARCH FORM ***/
+```
+- Target the `form-search` class
+    - Property: `display`, Value: `block`
+    - Property: `padding`, Value: `.5rem 0`
+    - Property: `position`, Value: `relative`
+- Target the `search-button` class inside the `form-search` class
+    - Property: `display`, Value: `inline-block`
+    - Property: `background`, Value: `transparent`
+    - Property: `border`, Value: `0`
+    - Property: `margin` Value: `0`
+    - Property: `padding`, Value: `0`
+- Target the `search-icon` class inside the `search-button` class
+    - Property: `fill`, Value: point to the variable `color-white`
+    - Property: `width`, Value: `1.5rem`
+    - Property: `height`, Value: `1.5rem`
+- Target the `input` type `search` inside the `form-search` class
+    - Property: `display`, Value: `inline-block`
+    - Property: `color`, Value: point to the variable `color-white`
+    - Property: `padding-right`, Value: `2rem`
+    - Property: `height`, Value: `3rem`
+    - Property: `border`, Value: `0`
+    - Property: `outline`, Value: `none`
+    - Property: `position`, Value: `absolute`
+    - Property: `width`, Value: `0`
+    - Property: `right`, Value: `0`
+    - Property: `background`, Value: `none`
+    - Property: `cursor`, Value: `pointer`
+    - Property: `z-index`, Value: `3`
+    - Property: `transition`, Value: `width .4s cubic-bezier(0, 0.795, 0, 1)`
+- Target the `focus` state of `input` type `search` inside the `form-search` class
+    - Property: `position`, Value: `relative`
+    - Property: `width`, Value: `15rem`
+    - Property: `z-index`, Value: `1`
+    - Property: `border-bottom`, Value: `.1rem solid var(--color-grey)`
+    - Property: `padding`, Value: `0`
+    - Property: `cursor`, Value: `text`
+    - Property: `margin`, Value: `0 1rem`
+    - 
+File: `07-article.html`, `07-styles.css`
