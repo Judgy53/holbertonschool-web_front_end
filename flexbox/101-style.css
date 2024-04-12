@@ -1,0 +1,44 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    color: #ffffff;
+    background-color: var(--box-color);
+    flex: var(--box-size) 1 auto;
+    font-size: calc(var(--box-size) * 3vw);
+    max-width: calc(var(--box-size) * 8.33vw);
+    aspect-ratio: 1.5;
+
+    /* Center the text in the box */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box1 {
+    --box-color: #1fd372;
+    --box-size: 1;
+}
+
+.box2 {
+    --box-color: #2d98de;
+    --box-size: 2;
+}
+
+.box3 {
+    --box-color: #344a61;
+    --box-size: 3;
+}
+
+.box4 {
+    --box-color: #9d55b9;
+    --box-size: 2;
+}
+
+.box5 {
+    --box-color: #e78000;
+    --box-size: 1;
+}

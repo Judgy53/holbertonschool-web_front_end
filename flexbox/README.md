@@ -20,6 +20,7 @@ Most tasks were done using a starter html `_starter.html` and a starter css `_st
 - [13. The meta list inside the aside section](#13-the-meta-list-inside-the-aside-section)
 - [14. Add the share social icons](#14-add-the-share-social-icons)
 - [15. Finalizing the cherry on the cake that is the article](#15-finalizing-the-cherry-on-the-cake-that-is-the-article)
+- [16. Timemachine boxes!](#16-timemachine-boxes)
 
 
 ## 0. Add display flex
@@ -417,3 +418,36 @@ Target `img-caption` class inside `post-content` class
 - Property: `text-align`, Value: `center`
 
 File: `100-article.html`, `100-styles.css`
+
+## 16. Timemachine boxes!
+Write a CSS file that display a set of boxes in the same layout as the example screenshot below.
+- Choose a custom color for each box
+- You must use `flex`
+- You are not allowed to use `float`
+- You are not allowed to use `text-align`
+- You are not allowed to use `margin` or `padding`
+- You are not allowed to change the HTML file
+
+Use this `101-index.html` file:
+```html
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>101-index</title>
+        <link href="101-style.css" media="all" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="box box1">box 1</div>
+            <div class="box box2">box 2</div>
+            <div class="box box3">box 3</div>
+            <div class="box box4">box 4</div>
+            <div class="box box5">box 5</div>
+        </div>
+    </body>
+</html>
+```
+![Example Screenshot](https://s3.eu-west-3.amazonaws.com/hbtn.intranet/uploads/medias/2020/2/cc7df3ea12330c1fadf5.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4MYA5JM5DUTZGMZG%2F20240412%2Feu-west-3%2Fs3%2Faws4_request&X-Amz-Date=20240412T120542Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=c3539e951625ab8c78d2258ae75f54c47faacc86fcc3fee24bdc8786a1d8349a)
+
+File: `101-style.css`
