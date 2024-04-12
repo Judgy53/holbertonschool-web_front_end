@@ -1,0 +1,14 @@
+/* Assign font-size to h1 based on screen width */
+h1 {
+    font-size: 20px;
+    @for $i from 3 through 1 {
+        @media screen and (max-width: calc(320px * $i)) {
+            font-size: calc(12px + 2px * $i);
+            @if $i == 1 {
+                &.small {
+                    color: #1D1D1D;
+                }
+            }
+        }
+    }
+}

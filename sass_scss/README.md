@@ -284,3 +284,27 @@ Write a Sass file that assigns:
           font-size: 14px; } }
 ```
 File: `101-media_query.scss`
+## 15. Media query #1
+Write a Sass file that assigns:
+- Font size `20px` to `h1` tags
+- Font size `18px` to `h1` tags, when your screen width is smaller than `960px`
+- Font size `16px` to `h1` tags, when your screen width is smaller than `640px`
+- Font size `14px` to `h1` tags, when your screen width is smaller than `320px`
+- Text color `#1D1D1D` to `h1.small` tags, when your screen width is smaller than `320px`
+```shell
+$ sass 102-media_query.scss | tail -n +2
+h1 {
+font-size: 20px; }
+@media screen and (max-width: 960px) {
+  h1 {
+    font-size: 18px; } }
+@media screen and (max-width: 640px) {
+  h1 {
+    font-size: 16px; } }
+@media screen and (max-width: 320px) {
+  h1 {
+    font-size: 14px; }
+    h1.small {
+      color: #1D1D1D; } }
+```
+File: `102-media_query.scss`
