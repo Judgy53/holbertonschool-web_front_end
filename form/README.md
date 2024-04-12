@@ -250,3 +250,73 @@ From `04-styles.css`, create `05-styles.css`:
     - Property: `margin`, Value: `.4rem 0 0`
 
 File: `05-article.html`, `05-styles.css`
+## 5. add pure HTML / CSS error handling
+From `05-styles.css`, create `06-styles.css`:
+- In the variable section, after the `color-dark-grey` variable
+    - Create a custom property
+        - Name: `color-red`, Value: `#cd3e65`
+    - Create a custom property
+        - Name: `color-green`, Value: `#08805b`
+- After the `text-color` variable
+    - Create a custom property
+        - Name: `valid-color`, Value: point to the`color-green` variable
+    - Create a custom property
+        - Name: `error-color`, Value: point to the `color-red` variable
+- At the end of the CSS file
+    - Add a new separation
+```css
+/* Form error handling
+============================= */
+```
+- Add this code to your file. The code is given to you with comments to help you to understand, because it’s a little bit advanced but really powerful when correctly understood.
+```css
+    /* The following code is used to place the icon in the after pseudo element. Because after and before are not possible in an input, we need to use a span that will be positioned on the right of our input. */
+    
+    input:not(:placeholder-shown) ~ .form-field-icon::after {
+      height: 100%;
+      right: 0;
+      pointer-events: none;
+      position: absolute;
+      top: 0;
+      width: 1.3em;
+    }
+    
+    /* Because inputs are invalid by default, we need to be careful and show the icon when we are not in focus and when when the input is not empty (placeholder-shown). Careful with this one because it is not supported everywhere. */
+    
+    input:required:invalid:not(:focus):not(:placeholder-shown) ~ .form-field-icon::after {
+      content: '✘';
+      color: var(--error-color);
+    }
+    
+    input:required:valid ~ .form-field-icon::after {
+      content: '✔';
+      color: var(--valid-color);
+    }
+    
+    /* We want to hide the helper text when we are not in focus. The tilte allows us to select a sibling element in CSS */
+    
+    input:required:valid ~ .form-help {
+      max-height: 0;
+    }
+    
+    /* Showing a border in a different color is good but not enough. For accessibility purposes, we added an icon when the input is valid or invalid to have a visual distinction that is not only color based.*/
+    
+    input:required:invalid:not(:focus):not(:placeholder-shown),
+    textarea:invalid:not(:focus):not(:placeholder-shown) {
+      border: 0.1rem solid var(--error-color);
+    }
+    
+    input:required:valid:not(:placeholder-shown),
+    textarea:valid:not(:placeholder-shown) {
+      border: 0.1rem solid var(--valid-color);
+    }
+```
+- In the `/* Base` section, after the hover state of the `button`
+    - Target the `button-primary` class
+        - Property: `color`, Value: point to the variable `color-white`
+        - Property: `background`, Value: point to the variable `color-primary`
+    - Target the hover state of the `button-primary` class
+        - Property: `color`, Value: point to the variable `color-primary`
+        - Property: `background`, Value: point to the variable `color-white`
+        - 
+File: `06-styles.css`, `06-article.html`
