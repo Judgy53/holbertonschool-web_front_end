@@ -19,6 +19,7 @@ Most tasks were done using a starter html `_starter.html` and a starter css `_st
 - [12. The structure of the main article](#12-the-structure-of-the-main-article)
 - [13. The meta list inside the aside section](#13-the-meta-list-inside-the-aside-section)
 - [14. Add the share social icons](#14-add-the-share-social-icons)
+- [15. Finalizing the cherry on the cake that is the article](#15-finalizing-the-cherry-on-the-cake-that-is-the-article)
 
 
 ## 0. Add display flex
