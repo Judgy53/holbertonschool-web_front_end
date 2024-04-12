@@ -351,3 +351,68 @@ In your `14-article.html`, inside the `post-share` div
 
 File: `14-article.html`, `14-styles.css`
 
+## 15. Finalizing the cherry on the cake that is the article
+In your `100-article.html`
+
+Inside the `post-content` article
+- Add a paragraph
+    - Text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tum mihi Piso: Quid ergo? Tum ille: Ain tandem? Non autem hoc: igitur ne illud quidem. Sed quod proximum fuit non vidit. Nos commodius agimus. An nisi populari fama?`
+- Add another paragraph
+    - Text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed haec omittamus; Hoc Hieronymus summum bonum esse dixit. Duo Reges: constructio interrete.`
+        - You should wrap the following text with a `<b>` tag: `Hoc Hieronymus summum bonum esse dixit.`
+- Add a heading level 2
+    - Text: `Prioris generis est docilitas, memoria`
+- Add an ordered list
+    - First `li`
+        - Text: `Nec enim, dum metuit, iustus est, et certe, si metuere destiterit, non erit;`
+    - Second `li`
+        - Text: `Quid enim de amicitia statueris utilitatis causa expetenda vides.`
+- Add another paragraph
+    - Text: `Morbi pharetra congue ante ac tincidunt. Donec euismod eu mauris nec laoreet. Praesent id sodales ipsum. Aliquam erat volutpat. Ut porta sem eget libero faucibus, eget convallis nisi finibus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum accumsan euismod nunc quis viverra.`
+- Create a `<figure>` HTML tag
+    - Download [the image](https://s3.eu-west-3.amazonaws.com/hbtn.intranet/uploads/medias/2020/8/6da1e68f404908e71e94e60bb156d01858a21191.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4MYA5JM5DUTZGMZG%2F20240412%2Feu-west-3%2Fs3%2Faws4_request&X-Amz-Date=20240412T110726Z&X-Amz-Expires=345600&X-Amz-SignedHeaders=host&X-Amz-Signature=0b9cc2243367e7bf9722d8dba0378eef5dc0899211fa95d5ec4a38c1d758f38d "the image") and create an `img` tag to call it
+        - Alt: `Glasses, baby converse shoes, black bag, wipes on a dresser with an open drawer`
+        - Width: `620`
+        - Height: `350`
+    - Add a `figcaption` with the class `img-caption`
+        - Text: `Pugnant Stoici cum Peripateticis. Prioris generis est docilitas`
+- Add a new paragraph
+    - Text: `Quare conare, quaeso. Dici enim nihil potest verius. Primum divisit ineleganter; Suam denique cuique naturam esse ad vivendum ducem.`
+- Add a blockquote
+    - Cite: `https://www.holbertonschool.com/`
+    - Text: `Ego autem tibi, Piso, assentior usu hoc venire, ut acrius aliquanto et attentius de claris viris locorum admonitu cogitemus.`
+- Add a new paragraph
+    - Text: `Omnia contraria, quos etiam insanos esse vultis. Tibi hoc incredibile, quod beatissimum.`
+- Add a heading level 2
+    - Text: `Piso igitur hoc modo, vir optimus tuique, ut scis, amantissimus.`
+- Add a new paragraph
+    - Text: `Apparet statim, quae sint officia, quae actiones. Quae in controversiam veniunt, de iis, si placet, disseramus.`
+    - Create a link that wraps `Apparet statim, quae sint officia, quae actiones.`
+        - Href: `https://www.holbertonschool.com/`
+        - Target: `_blank`
+        - Add the `rel` needed for target blank
+- Add an unordered list
+    - First `li`: `Tubulum fuisse, qua illum, cuius is condemnatus est rogatione, P.`
+    - Second `li`: `Quis est autem dignus nomine hominis, qui unum diem totum velit esse in genere isto voluptatis?`
+    - Third `li`: `Sed in rebus apertissimis nimium longi sumus.`
+- Add one last paragraph:
+    - Text: `Hoc etsi multimodis reprehendi potest, tamen accipio, quod dant. Atqui, inquam, Cato, si istud optinueris, traducas me ad te totum licebit. Nemo nostrum istius generis asotos iucunde putat vivere. Res enim se praeclare habebat, et quidem in utraque parte. Qui autem esse poteris, nisi te amor ipse ceperit? Ita fit cum gravior, tum etiam splendidior oratio. De vacuitate doloris eadem sententia erit. Sin tantum modo ad indicia veteris memoriae cognoscenda, curiosorum.`
+
+Updating the CSS with more styling
+
+In the `100-styles.css`
+- Target all `img` inside the `post` class
+    - Property: `width`, Value: `100%`
+    - Property: `height`, Value: `auto`
+
+Target the first-child of paragraphs inside `post-content` class
+- Property: `font-size`, Value: point to the variable `font-size-x-large`
+
+Target `img-caption` class inside `post-content` class
+- Property: `margin`, Value: `1rem 0`
+- Property: `padding`, Value: `0 .5rem`
+- Property: `font-size`, Value: point to the variable `font-size-small`
+- Property: `color`, Value: point to the variable `color-grey` (if the variable doesn’t exist, create it with the value of `#a0a0a0`)
+- Property: `text-align`, Value: `center`
+
+File: `100-article.html`, `100-styles.css`
