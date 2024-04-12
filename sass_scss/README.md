@@ -247,3 +247,26 @@ h5 {
 ```
 File: `12-loop_header.scss`
 
+## 13. Columns and operators
+Write a Sass file that creates classes with different width:
+- `col-1` with width equals to `100%`
+- `col-2` with width equals to `50%`
+- `col-3` with width equals to `33.3333333333%`
+- `col-4` with width equals to `25%`
+- You must create `.col-*` class from 1 to 4
+- You must use a `@for` statement
+```shell
+$ sass 100-loop_col.scss | tail -n +2
+.col-1 {
+  width: 100%; }
+
+.col-2 {
+  width: 50%; }
+
+.col-3 {
+  width: 33.3333333333%; }
+
+.col-4 {
+  width: 25%; }
+```
+File: `100-loop_col.scss`
