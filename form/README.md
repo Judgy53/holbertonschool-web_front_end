@@ -111,3 +111,80 @@ From `02-styles.css`, create `03-styles.css`:
     - set padding to `0 0 .5rem`
 
 File: `03-styles.css, 03-article.html`
+## 3. create the inputs
+From `03-article.html`, create `04-article.html`:
+- In the first `fieldset`
+    - In the first span of `form-field-container` class, create an `input`
+        - Type: `text`
+        - Name: `your-first-name`
+        - Id: `your-first-name`
+        - Placeholder: `e.g. Mike`
+        - Pattern: `[A-Za-zÀ-ž\s]{3,}` (we want to allow all characters with and without accents and spaces. We want to have at least 3 characters to make the `input` valid)
+        - Max length: `35`
+        - Autocomplete is on
+        - Access Key: `f`
+        - Required: true
+    - In the second span of `form-field-container` class, create an `input`
+        - Type: `text`
+        - Name: `your-last-name`
+        - Id: `your-last-name`
+        - Placeholder: `e.g. Smith`
+        - Pattern: `[A-Za-zÀ-ž\s]{3,}` (we want to allow all characters with and without accents and spaces. We want to have at least 3 characters to make the `input` valid)
+        - Max length: `40`
+        - Autocomplete is on
+        - Access Key: `l`
+        - Required: true
+    - In the third span of `form-field-container` class, create an `input`
+        - Type: `email`
+        - Name: `your-email`
+        - Id: `your-email`
+        - Placeholder: `e.g. youremail@gmail.com`
+        - Pattern: `[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$` (we want to ensure the correct format of the email)
+        - Max length: `55`
+        - Autocomplete is on
+        - Access Key: `e`
+        - Required: true
+- In the second `fieldset`
+    - In the first `span` of `form-field-container` class, create an `input`
+        - Type: `text`
+        - Name: `your-title`
+        - Id: `your-title`
+        - Placeholder: `e.g. I loved that article`
+        - Pattern: `[A-Za-zÀ-ž\s]{4,}` (we want to allow all characters with and without accents and spaces. We want to have at least 4 characters to make the `input` valid)
+        - Max length: `75`
+        - Autocomplete is on
+        - Access Key: `t`
+        - Required: true
+    - In the second `span` of `form-field-container` class, create a `textarea`
+        - Name: `your-comment`
+        - Id: `your-comment`
+        - Placeholder: `Write your comment here`
+        - Minimum length: 10
+        - Access Key: `c`
+        - Required: true
+        - Columns: 30
+        - Rows: 6
+
+From `03-styles.css`, create `04-styles.css`, after the `label` selector:
+- Target in one selector all `input` type `text`, all `input` type `email`, all `textarea`
+    - Property: `position`, Value: `relative`
+    - Property: `width`, Value: `100%`
+    - Property: `padding`, Value: `1.2rem`
+    - Property: `line-height`, Value: `1`
+    - Property: `border`, Value: `.1rem solid` point to the variable `color-black`
+    - Property: `background-color`, Value: point to the variable `color-white`
+    - Property: `box-shadow`, Value: `none`
+    - Property: `outline`, Value: `0`
+- Target in one selector all `input` type `text`, all `input` type `email`
+    - Property: `padding-right`, Value: `3rem`
+- Target in one selector the focus state of all `input` type `text`, the focus state of all `input` type `email`, the focus state of all `textarea`
+    - Property: `border`, Value: `.1rem solid` point to the variable `color-grey`
+    - Property: `background-color`, Value: point to the `color-light-grey`
+- Now target the `placeholder`, it can be tricky so I will give you the code to add to your stylesheet:
+```css
+::placeholder {
+    font-style: italic;
+    font-size: var(--font-size-small);
+}
+```
+File: `04-article.html, 04-styles.css`
