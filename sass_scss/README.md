@@ -308,3 +308,13 @@ font-size: 20px; }
       color: #1D1D1D; } }
 ```
 File: `102-media_query.scss`
+
+## 16. Sort!
+Write a Sass file that sorts the variable `$list_to_sort` and prints the sorted list in the debug output.
+```shell
+$ cat 103-sort_list.scss 
+$list_to_sort: john anna zoe kim felicia carrie;
+$ sass 103-sort_strings.scss | tail -n +2
+103-sort_strings.scss:64 DEBUG: anna carrie felicia john kim zoe
+```  
+File: `103-sort_strings.scss`

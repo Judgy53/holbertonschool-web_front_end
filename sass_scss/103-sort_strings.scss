@@ -1,0 +1,51 @@
+/* Sort an array of strings using bubble-sort and debug print it */
+@import '103-sort_list.scss';
+
+$alphabet: 'A' 'B' 'C' 'D' 'E' 'F' 'G' 'H' 'I' 'J' 'K' 'L' 'M' 'N' 'O' 'P' 'Q' 'R' 'S' 'T' 'U' 'V' 'W' 'X' 'Y' 'Z';
+$alphabet: join($alphabet, 'a' 'b' 'c' 'd' 'e' 'f' 'g' 'h' 'i' 'j' 'k' 'l' 'm' 'n' 'o' 'p' 'q' 'r' 's' 't' 'u' 'v' 'w' 'x' 'y' 'z');
+
+@function compare-str($str1, $str2) {
+    $max-index: min(str-length($str1), str-length($str2));
+
+    // @debug 'comparing' $str1 'and' $str2;
+    @for $i from 1 to $max-index {
+        $char-str1-ord: index($alphabet, str-slice($str1, $i, $i));
+        // @debug $i str-slice($str1, $i, $i) $char-str1-ord;
+        @if $char-str1-ord == null {
+            @return 1;
+        }
+        $char-str2-ord: index($alphabet, str-slice($str2, $i, $i));
+        // @debug $i str-slice($str2, $i, $i) $char-str2-ord;
+        @if $char-str2-ord == null {
+            @return -1;
+        }
+        @if $char-str1-ord != $char-str2-ord {
+            @return $char-str1-ord - $char-str2-ord;
+        }
+    }
+
+    @return 0;
+}
+
+@function bubble-sort($list) {
+    $max-index: length($list);
+    $sorted: false;
+    @while not $sorted {
+        $sorted: true;
+        @for $i from 1 to $max-index {
+            $current: nth($list, $i);
+            $next: nth($list, $i + 1);
+            @if compare-str($current, $next) > 0 {
+                // @debug 'swapping' $current 'and' $next;
+                $list: set-nth($list, $i, $next);
+                $list: set-nth($list, $i + 1, $current);
+                $sorted: false;
+            }
+        }
+        $max-index: $max-index - 1
+    }
+
+    @return $list;
+}
+
+@debug bubble-sort($list_to_sort)
