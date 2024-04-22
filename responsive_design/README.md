@@ -14,3 +14,10 @@ In your `01-styles.css` file
     - Update the `min-height` to `35vh`
 
 File: `01-styles.css, 01-index.html`
+
+## 1. Make the container flexible
+Using the previous file as the base, in your `02-styles.css` file update the `.container` selector by changing `width` to `max-width`
+
+If you resize your browser, you should see that the content is resizing.
+
+File: `02-styles.css, 02-index.html`
