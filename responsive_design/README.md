@@ -113,3 +113,32 @@ Inside the `/* Navbar` section, and inside the `767px` media query
     - Property: `transition`, Value: `max-height .2s ease-out`
 
 File: `04-index.html, 04-styles.css`
+
+## 5. Hamburger!
+Let’s now, use a little bit of CSS magic to create an “hamburger” icon just with CSS.
+- Target the `menu-icon` class inside the `header` class
+    - Property: `cursor`, Value: `pointer`
+    - Property: `padding`, Value: `2.5rem`
+    - Property: `position`, Value: `relative`
+    - Property: `user-select`, Value: `none`
+- Target the `navicon` class inside the`menu-icon` class which is inside the `header` class
+    - Property: `background`, Value: point to the `color-white` variable
+    - Property: `display`, Value: `block`
+    - Property: `width`, Value: `2rem`
+    - Property: `height`, Value: `.2rem`
+    - Property: `position`, Value: `relative`
+    - Property: `transition`, Value: `background .2s ease-out`
+- Target the `before` and `after` pseudo elements of the `navicon` class inside the `menu-icon` class which is inside the `header` class
+    - Property: `content`, Value: empty string
+    - Property: `display`, Value: `block`
+    - Property: `width`, Value: `100%`
+    - Property: `height`, Value: `100%`
+    - Property: `position`, Value: `absolute`
+    - Property: `background`, Value: point to the `color-white` variable
+    - Property: `transition`, Value: `all .2s ease-out`
+- Target only the `before` pseudo element of the `navicon` class inside the `menu-icon` class which is inside the `header` class
+    - Property: `top`, Value: `.7rem`
+- Target only the `after` pseudo element of the `navicon` class inside the `menu-icon` class which is inside the `header` class
+    - Property: `top`, Value: `-.7rem`
+
+File: `05-index.html, 05-styles.css`
