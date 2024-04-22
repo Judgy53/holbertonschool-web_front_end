@@ -81,3 +81,12 @@ Add a title: `Homepage - A fake website`
 Check with Axe to ensure the issue is fixed
 
 File: `fix-a11y/02-index.html`
+
+## 4. <html> element must have a lang attribute
+Taking your code from the previous task, in your `fix-a11y/03-index.html` file
+
+On the `html` tag, add the attribute `lang` with the `en` value.
+
+Check with Axe to ensure the issue is fixed.
+
+File: `fix-a11y/03-index.html`
