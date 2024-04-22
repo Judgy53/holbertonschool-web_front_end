@@ -72,3 +72,12 @@ As you can see, the contrast is not good. The easy fix is simply to remove the `
 Check with Axe to ensure the issue is fixed.
 
 File: `fix-a11y/01-index.html`
+
+## 3. Documents must have <title> element to aid in navigation
+Taking your code from the previous task, in your `fix-a11y/02-index.html` file
+
+Add a title: `Homepage - A fake website`
+
+Check with Axe to ensure the issue is fixed
+
+File: `fix-a11y/02-index.html`
