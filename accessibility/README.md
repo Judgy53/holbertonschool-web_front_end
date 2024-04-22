@@ -1,7 +1,7 @@
 # accessibility
 Project where we learn about `WCAG`, `ARIA`, and how to implement them in a website.
 
-`00-index.html`, `00-styles.css` and `00-article.html` are starter files and were created prior to this project.
+Files starting with `00` (like `00-article.html`) are starter files and were created prior to this project or given to us.
 
 ## 0. make the "works" card focus visible
 Let’s start by the “Work” section:
@@ -26,7 +26,6 @@ All the other elements have a blue outline around.
 File: `keyboard/01-styles.css, keyboard/01-index.html`
 
 ## 1. add the skip-links
-
 Using the `00-index.html` starter file, in your `skip-links/01-index.html` file, just after the `<body>` HTML open tag
 - Add the `<!-- Skip links -->` comment
 - Create a new `<nav>` tag with the `aria-label` attribute. Put the value `Skip links` inside it.
@@ -64,3 +63,12 @@ Using the stylesheet from the previous task, in your `skip-links/01-styles.css` 
     - Property: `transform`, Value: `translateY(0)`
 
 File: `skip-links/01-index.html, skip-links/01-article.html, skip-links/01-styles.css`
+
+## 2. Elements must have sufficient color contrast
+You are given `fix-a11y/00-index.html` starter file:
+
+As you can see, the contrast is not good. The easy fix is simply to remove the `body` styles in the embed `<style>`. Do this in your `fix-a11y/01-index.html` file. In a real case, you could use the Contrast Ratio section of the Color Picker in your dev tools.
+
+Check with Axe to ensure the issue is fixed.
+
+File: `fix-a11y/01-index.html`
