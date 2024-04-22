@@ -202,3 +202,17 @@ In your CSS file at the end of the `/* Base` section
 This is a simple way to achieve responsive typography. More complex options can also be used to have a more granular control over the font sizes.
 
 File: `07-index.html, 07-styles.css`
+
+## 8. Improve the "Works" section
+
+In `08-styles.css`, at the end of the `/* Card WORK`
+- Create a new media query of `max-width: 767px`
+    - Target the `card-inner` class inside the `card-work` class
+        - Property: variable called `text-color`, Value: point to `color-white` variable
+        - Property: `position`, Value: `relative`
+    - Target the `card-title` class inside the `card-work` class
+        - Property: `opacity`, Value: `1`
+    - Target all `a` tags inside `.card-work .card-title` class:
+        - Property: `padding`, Value: `2rem 1rem 0 1rem`
+
+File: `08-index.html, 08-styles.css`
