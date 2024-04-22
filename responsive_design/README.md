@@ -229,3 +229,14 @@ In `09-styles.css`, in the `/* Footer` section
         - Property: `padding-left`, Value:`2rem`
 
 File: `09-index.html, 09-styles.css`
+
+### 10. Fix the top header background
+
+In `10-index.html`, in the `body` tag, add the class `article-page`
+
+In `10-styles.css`, in the `/* Section HERO` section, just before the media query:
+- Target `section-hero` class inside `article-page` class
+    - Property: `margin-top`, Value: `-8.5rem`
+    - Property: `padding-top`, Value: `5rem`
+
+File: `10-index.html, 10-styles.css`
