@@ -240,3 +240,28 @@ In `10-styles.css`, in the `/* Section HERO` section, just before the media quer
     - Property: `padding-top`, Value: `5rem`
 
 File: `10-index.html, 10-styles.css`
+
+## 11. Make the article page responsive
+
+**use `article.html` for this task**
+
+**in `100-styles.css`** (from `10-styles.css`)
+
+inside the `/* Post` section, before the end of the section:
+- Target the `post` class
+    - Property: `margin`, Value: `0 2rem`
+- Create a new media query of `max-width: 767px`
+    - Target the `post` class
+        - Property: `flex-direction`, Value: `column`
+        - Property: `margin`, Value: `2rem`
+    - Target the `post-content` class
+        - Property: `padding-left`, Value: `0`
+
+Inside the `/* Comment` section, before the end of the section:
+- Create a new media query of `max-width: 767px`
+    - Target `post-comments` class
+        - Property: `width`, Value: `calc(100% - 4rem)`
+        - Property: `margin`, Value: `2rem`
+        - Property: `padding`, Value: `0`
+
+File: `100-article.html, 100-styles.css`
