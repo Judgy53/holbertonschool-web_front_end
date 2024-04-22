@@ -82,4 +82,34 @@ Here’s an example on how to add different resolutions of the same image
     src="about-us_icoxoo_c_scale,w_1200.jpg"
     alt="">
 ```
-- File: `03-index.html, 03-styles.css`
+File: `03-index.html, 03-styles.css`
+
+## 4. Create the mobile icon and hide the menu
+We want to have a clickable icon that shows and hide our navigation. We don’t want to use JavaScript but find a pure HTML / CSS way. We learned that input type checkbox have a checked - unchecked state. So we are going to use this for our menu.
+
+**Changes to the HTML**
+
+Just before the `<nav class="navbar-menu">`
+- Create an input (which will be not visible)
+    - Class: `menu-btn`
+    - Type: `checkbox`
+    - Id: `menu-btn`
+- Create a label
+    - Class: `menu-icon`
+    - For: `menu-btn`
+    - In the label create an empty `span` with the `navicon` class.
+
+**Changes to the CSS**
+
+Inside the `/* Navbar` section, and inside the `767px` media query
+- Create the `root` global selector. We want to override a CSS variable:
+    - Variable name: `nav-item-margin`, Value: `0`
+- In the selector for the `navbar-menu` class
+    - Property: `flex`, Value: `1`
+- Target the `nav` class in `header` class
+    - Property: `flex-direction`, Value: `column` (for the element of the menu be below each other)
+    - Property: `overflow`, Value: `hidden`
+    - Property: `max-height`, Value: `0` (the display property can’t be animated, so we use the height that can be animated)
+    - Property: `transition`, Value: `max-height .2s ease-out`
+
+File: `04-index.html, 04-styles.css`
