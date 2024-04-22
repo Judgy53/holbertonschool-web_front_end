@@ -188,3 +188,17 @@ Going back to the `/* menu btn */` section
 - Find the `.header .menu-icon` selector and add `display: none;` to hide the menu icon when we are on desktop mode.
 
  File: `06-index.html, 06-styles.css`
+## 7. Make the font size responsive
+We have multiple ways to make the typography responsive. The basic way would be to create multiple media queries and set a different font-size. But because we are using REM that are based on 62.5% (defined in the html selector). Changing that value would change proportionally all font sizes.
+
+In your CSS file at the end of the `/* Base` section
+- Create a new media query for `max-width: 480px`
+    - Target the `html` element
+        - Property: `font-size`, Value: `57%`
+- Create a new media query for `min-width: 481px` and `max-width: 767px`
+    - Target the `html` element
+        - Property: `font-size`, Value `60%`
+        - 
+This is a simple way to achieve responsive typography. More complex options can also be used to have a more granular control over the font sizes.
+
+File: `07-index.html, 07-styles.css`
