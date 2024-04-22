@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ##########################################################
-# Script: copy_files.sh                                 #
+# Script: copy_next_task.sh                             #
 # Description: This script copies files named           #
 #              XX-index.html and XX-styles.css, where   #
 #              XX is a two-digit number. It takes       #
@@ -14,9 +14,9 @@
 #              styles file.                             #
 #              Created with ChatGPT.                    #
 #                                                       #
-# Usage: ./copy_files.sh <new_number>                   #
+# Usage: ./copy_next_task.sh <new_number>               #
 # Arguments:                                            #
-#   <new_number>: The new number for the files.         #
+#   <new_number>: The new number for the task.          #
 ##########################################################
 
 # Check if the correct number of arguments are passed
