@@ -677,6 +677,16 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
   }
+
+  @supports not selector(:focus-visible) {
+    /* Fallback for browsers without :focus-visible support */
+    .card-work .card-title a:focus,
+    .card-work:hover .card-title a {
+      opacity: 1;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+  }
   
   .card-work .card-title a::after {
     position: absolute;
