@@ -186,3 +186,15 @@ Remember that `header`, `section`, `footer` etc contain a default role (=landmar
 All automated issues are now solved! You fixed around 50% of accessibility issues. The rest are manual issues, tested using screen-reading tools or just reading the code.
 
 File: `fix-a11y/09-index.html`
+
+## 11. More than 2 elements become list
+Automated tools can’t always alert about elements that should exist as a list.
+
+Taking your code from the previous task, in your `fix-a11y/10-index.html` file
+
+- Locate the `nav`
+    - Transform the `<div>` in a `<ul>` and every `<p>` in an `li`
+- Locate the div with `package-list` class
+    - Transform the children in an `ul` with the 3 spans being each an `li`
+
+File: `fix-a11y/10-index.html`
