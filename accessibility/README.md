@@ -90,3 +90,13 @@ On the `html` tag, add the attribute `lang` with the `en` value.
 Check with Axe to ensure the issue is fixed.
 
 File: `fix-a11y/03-index.html`
+
+## 5. Images must have alternate text
+Taking your code from the previous task, in your `fix-a11y/04-index.html` file
+
+- Locate the `img` that points to the `logo.png`
+    - Add an `alt` attribute with the text `Name of the logo`
+- Locate the `img` that points to the `hero-img.png`
+    - Add an empty `alt` (decorative image)
+
+File: `fix-a11y/04-index.html`
