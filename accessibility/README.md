@@ -100,3 +100,22 @@ Taking your code from the previous task, in your `fix-a11y/04-index.html` file
     - Add an empty `alt` (decorative image)
 
 File: `fix-a11y/04-index.html`
+
+## 6. Form elements must have labels
+Taking your code from the previous task, in your `fix-a11y/05-index.html` file, locate the `form`
+- Add a `label` just before the `input`
+    - Class: `visually-hidden`
+    - For: `email`
+- On the `input`
+    - Add an `id`: `email`
+
+Axe tells use that the issue is solved. But actually, some elements should be fixed for better accessibility and usability.
+- We can change the `type` from `text` to `email`
+- Add the attribute `autocomplete` with the value `email`
+- Add the `required` attribute and the `aria-required="true"`
+- Change the `a` to be a `button`
+- We can remove the `placeholder` as it doesn’t add any value
+
+We don’t have any error handling in our example, that should exist on the front-end / back-end side.
+
+File: `fix-a11y/05-index.html`
