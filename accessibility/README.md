@@ -136,3 +136,34 @@ In your `fix-a11y/07-index.html` file
 Locate the `meta` viewport and remove `user-scalable=no`
 
 File: `fix-a11y/07-index.html`
+
+## 9. Heading levels should only increase by one and all page content must be contained by landmarks
+You can install the [headingsMap](https://chromewebstore.google.com/detail/headingsmap/flbjommegcjonpdmenkdiocclhjacmbi?hl=en "headingsMap") extension to have a visual representation of your headings.
+
+Taking your code from the previous task, in your `fix-a11y/08-index.html` file
+
+- Like our Techium project, we are going to create an `h1` just after the `<div class="header">` closing tag. (The `h1` will be sibling to the `<div class="header">` div)
+    - Text: `Homepage`
+- Change `<h6>This is me</h6>` to be `<h2>This is me</h2>`
+- Change `<h1>Philip Gilbert</h1>` to be `<span>Philip Gilbert</span>`
+- Change `<h6>About Me</h6>` to be `<h2>About Me</h2>`
+- Change `<h1>Personal Details</h1>` to be `<span>Personal Details</span>`
+- Change `<h1>My Offered Services</h1>` to be `<h2>My Offered Services</h2>`
+- Change `<h4>Web Design</h4>` to be `<h3>Web Design</h3>`
+- Change `<h4>Web Development</h4>` to be `<h3>Web Development</h3>`
+- Change `<h1 class="counter">2536</h1>` to be `<span class="counter">2536</span>`
+- Change `<h1 class="counter">6784</h1>` to be `<span class="counter">6784</span>`
+- Change `<h1>Client's Feedback About Me</h1>` to be `<h2>Client's Feedback About Me</h2>`
+- Change `<h4>Harriet Maxwell</h4>` to be `<span>Harriet Maxwell</span>`
+- Change `<h1>Choose Your Plan</h1>` to be `<h2>Choose Your Plan</h2>`
+- Change `<h1>01</h1>` to be `<h3>01</h3>`
+- Change `<h1>$199.00</h1>` to be `<span>$199.00</span>`
+- Change `<h4>About Me</h4>` to be `<span>About Me</span>`
+- Change `<h4>Newsletter</h4>` to be `<span>Newsletter</span>`
+- Change `<h4>Follow Me</h4>` to be `<span>Follow Me</span>`
+
+Fixing wrong `headings` is not an easy task. Headings represent the outline of your content. Like the table of contents in a book, headings should help to understand what is inside your page.
+
+Always ask yourself if that word or sentence would make sense for anybody visiting your website.
+
+File: `fix-a11y/08-index.html`
