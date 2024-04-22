@@ -14,3 +14,6 @@ Project where we learn how to use flexbox in css
 
 ## form
 Project where we learn how html forms works and how to properly style them
+
+## responsive_design
+Project where we learn about `Mobile-first design` and how to make a website responsive
