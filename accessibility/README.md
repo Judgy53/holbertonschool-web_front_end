@@ -129,3 +129,10 @@ In your `fix-a11y/06-index.html` file
 Links should never be empty, in our case, we are using a font (like [Font Awesome](https://fontawesome.com/ "Font Awesome")) to generate icons.
 
 File: `fix-a11y/06-index.html`
+
+## 8. Zooming and scaling must not be disabled
+In your `fix-a11y/07-index.html` file
+
+Locate the `meta` viewport and remove `user-scalable=no`
+
+File: `fix-a11y/07-index.html`
