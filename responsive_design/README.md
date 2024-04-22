@@ -54,3 +54,32 @@ The `navbar` is not allowing the website to fit the window. We will temporarily 
         - Property: `display`, Value: `none`
         - 
 File: `02-1-styles.css, 02-1-index.html`
+
+## 3. Generate images with responsive breakpoints
+Go to [Responsive Breakpoints](https://www.responsivebreakpoints.com/ "Responsive Breakpoints")
+
+In Breakpoints generation settings:
+- Resolution: From `380` to `1200`
+- Size step: `25`
+- Maximum images: `3`
+- Art-direction: `Desktops`
+- Upload your images one at a time:
+    - `pic-about-01.jpg`
+    - `pic-article-01.jpg`
+    - `pic-article-02.jpg`
+    - `pic-article-03.jpg`
+- Copy the markup for the `<img>` tags and replace your current `<img>` tags with it.
+- Download the images and place them into the `images` directory
+
+Here’s an example on how to add different resolutions of the same image
+```html
+<img
+    sizes="(max-width: 3000px) 40vw, 1200px"
+    srcset="
+        about-us_icoxoo_c_scale,w_380.jpg 380w,
+        about-us_icoxoo_c_scale,w_853.jpg 853w,
+        about-us_icoxoo_c_scale,w_1200.jpg 1200w"
+    src="about-us_icoxoo_c_scale,w_1200.jpg"
+    alt="">
+```
+- File: `03-index.html, 03-styles.css`
