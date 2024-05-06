@@ -20,3 +20,6 @@ Project where we learn about `Mobile-first design` and how to make a website res
 
 ## accessibility
 Project where we learn about `WCAG`, `ARIA`, and how to implement them in a website
+
+## Bootstrap
+Project where we learn the basics of the CSS framework Bootstrap.
