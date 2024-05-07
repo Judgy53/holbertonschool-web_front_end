@@ -13,6 +13,7 @@ Tasks:
 - [2. Table of chemical elements](#2-table-of-chemical-elements)
 - [3. Cards](#3-cards)
 - [4. Bob Dylan](#4-bob-dylan)
+- [5. Show/Hide - screen size](#5-showhide---screen-size)
 
 
 ## 0. Reboot styling
@@ -606,3 +607,67 @@ Expected result:
 ![Expected result on disco tab](previews/4-disco.png)
 ![Expected result on intro tab after clicking on an album](previews/4-disco_open.png)
 ![Expected result responsive](previews/4-responsive.gif)
+
+## 5. Show/Hide - screen size
+
+Given files:
+<details>
+<summary>5-index.html</summary>
+
+```html
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+        <title>Holberton - Web Stack - Bootstrap</title>
+        <meta name="description" content="Bootstrap is a free and open-source CSS framework">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    </head>
+    <body>
+        <h1>Small title</h1>
+        <h1>Big title</h1>
+
+        <div>
+            <div>Left</div>
+            <div>Middle</div>
+            <div>Right</div>
+        </div>
+
+    </body>
+</html>
+```
+</details>
+
+---
+
+- Defining any CSS styling is not allowed.
+- Changing the HTML structure is not allowed - only adding classes is allowed.
+- `Big title` is displayed only for width screen > 768px
+- `Small title` is displayed only for width screen <= 768px
+- first `div` should:
+    - be centered as container and take the full width when the width of the screen <= 768px
+    - have “info color” background
+    - have some padding on the 4 directions
+    - have borders of the “info color” and rounded
+- “Left div” should:
+    - be aligned on the left
+    - have light text color
+    - have light border on the bottom and right
+        -   have some padding on the 4 directions
+- “Middle div” should:
+    - be aligned in the center
+    - have light text color
+    - have light border on the bottom, left and right
+    - have some padding on the 4 directions
+    - have shadow
+    - disappear when the width of the screen <= 768px
+- “Right div” should:
+    - be aligned on the right
+    - have light text color
+    - have light border on the bottom and left
+    - have some padding on the 4 directions
+
+Expected result:
+![Expected result responsive](previews/5.gif)
