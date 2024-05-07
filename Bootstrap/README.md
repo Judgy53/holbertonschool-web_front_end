@@ -11,6 +11,7 @@ Tasks:
 - [0. Reboot styling](#0-reboot-styling)
 - [1. Blocks](#1-blocks)
 - [2. Table of chemical elements](#2-table-of-chemical-elements)
+- [3. Cards](#3-cards)
 
 
 ## 0. Reboot styling
@@ -358,3 +359,139 @@ Given files:
 Expected Result:
 ![Expected result on desktop](previews/2-desktop.png)
 ![Expected result responsive](previews/2-responsive.gif)
+
+## 3. Cards
+
+Given files:
+<details>
+<summary>3-index.html</summary>
+
+```html
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+        <title>Holberton - Web Stack - Bootstrap</title>
+        <meta name="description" content="Bootstrap is a free and open-source CSS framework">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div>
+            <div>
+                <div>
+                    <div>
+                        <div>Coding</div>
+                        <img src="https://via.placeholder.com/450x200" />
+                        <div>
+                            <h5>HTML</h5>
+                            <p>Hypertext Markup Language (HTML) is the standard markup language for documents designed to be displayed in a web browser.</p>
+                            <button data-toggle="modal" data-target="#playModal">Play with</button>
+                        </div>
+                        <div>40h</div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <div>Coding</div>
+                        <img src="https://via.placeholder.com/450x200" />
+                        <div>
+                            <h5>CSS</h5>
+                            <p>Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language like HTML.</p>
+                            <button data-toggle="modal" data-target="#playModal">Play with</button>
+                        </div>
+                        <div>35h</div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <div>Coding</div>
+                        <img src="https://via.placeholder.com/450x200" />
+                        <div>
+                            <h5>Javascript</h5>
+                            <p>JavaScript, often abbreviated as JS, is a programming language that conforms to the ECMAScript specification.</p>
+                            <button data-toggle="modal" data-target="#playModal">Play with</button>
+                        </div>
+                        <div>70h</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div id="playModal" tabindex="-1" role="dialog" aria-labelledby="playModal" aria-hidden="true">
+            <div role="document">
+                <div>
+                    <div>
+                        <h5 id="exampleModalLabel">Play with CodePen</h5>
+                        <button type="button" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div>
+                        <p>
+                            CodePen is an online community for testing and showcasing user-created HTML, CSS and JavaScript code snippets. 
+                            It functions as an online code editor and open-source learning environment, where developers can create code snippets, called "pens," and test them.
+                        </p>
+                        <p>
+                            It was founded in 2012 by full-stack developers Alex Vazquez and Tim Sabat and front-end designer Chris Coyier.
+                            Its employees work remotely, rarely all meeting together in person. 
+                        </p>
+                        <p>
+                            CodePen is one of the largest communities for web designers and developers to showcase their coding skills, with an estimated 330,000 registered users and 14.16 million monthly visitors.
+                        </p>
+
+                        <form>
+                            <div>
+                                <h5>Connect</h5>
+                            </div>
+                            <div>
+                                <label for="username">Username</label>
+                                <div>
+                                    <input type="text" id="username" />
+                                </div>
+                            </div>
+                            <div>
+                                <label for="password">Password</label>
+                                <div>
+                                    <input type="password" id="password" />
+                                </div>
+                            </div>
+                            <div>
+                                <button type="submit">Connect</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+```
+</details>
+
+---
+
+- Defining any CSS styling is not allowed.
+- Changing the HTML structure is not allowed - only adding classes is allowed
+- The first `div` is a container with a break at `992px` and padding of `3rem`
+    - Inside, card is in row until `576px` where it will switch to column
+    - Each card has a spacing of `1.5rem` on top
+    - The text “Coding” is a card header
+    - Language name (card title) and description (card text) are inside a card body
+    - Duration in hour is a card footer
+    - Also, the button “Play with” has the “danger” layout and should open a modal
+- The second `div` is the modal:
+    - Centered vertically and horizontally
+    - The `form` has a border on top and a padding on top of `1rem`:
+        - Each items of the `form` are grouped
+        - The final rendering of the form must be the same as the screen (label on the left, color style, etc..)
+
+Expected Result:
+![Expected result on Desktop](previews/3-desktop.png)
+![Expected result when opening a modal](previews/3-modal.png)
+![Expected result responsive](previews/3_reponsive.gif)
