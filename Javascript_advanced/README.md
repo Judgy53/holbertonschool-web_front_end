@@ -17,6 +17,7 @@ Tasks:
 - [2. Closure](#2-closure)
 - [3. Closure and loops](#3-closure-and-loops)
 - [4. Complex Closure](#4-complex-closure)
+- [5. Changing DOM with closure](#5-changing-dom-with-closure)
 
 
 ## 0. Lexical scoping and welcome message
@@ -156,3 +157,43 @@ console.log(addBy1000(20));
 ---
 
 File: `4-math.js`
+
+## 5. Changing DOM with closure
+Create a function named `changeMode`:
+- It accepts 5 arguments `size` (number), `weight` (string), `transform` (string), `background` (string), `color` (string)
+- Using closure, it changes the style of the entire page and set the `font-size`, `font-weight`, `text-transform`, `background-color`, and `color`
+
+Write a function named `main`:
+- Set a variable named `spooky` that passes the arguments `9`, `bold`, `uppercase`, `pink`, `green` to `changeMode`
+- Set a variable named `darkMode` that passes the arguments `12`, `bold`, `capitalize`, `black`, `white` to `changeMode`
+- Set a variable named `screamMode` that passes the arguments `12`, `normal`, `lowercase`, `white`, `black` to `changeMode`
+- Add a paragraph to the body of the page with the text `Welcome Holberton!`
+- Add a button to the body with the text `Spooky`
+- Add a button to the body with the text `Dark mode`
+- Add a button to the body with the text `Scream mode`
+- When clicking on each button, the page CSS should change to the different themes you created previously
+
+Call the `main` function
+
+**Requirements:**
+- Use vanilla JavaScript to add the elements to the DOM and change the style of the page
+- JQuery not allowed!
+<details>
+<summary>Expected result after clicking the `Spooky` button</summary>
+
+![Example result after clicking the spooky button](previews/5-spooky.png)
+</details>
+<details>
+<summary>Expected result after clicking the `Dark mode` button</summary>
+
+![Example result after clicking the dark mode button](previews/5-dark.png)
+</details>
+<details>
+<summary>Expected result after clicking the `Scream mode` button</summary>
+
+![Example result after clicking the scream mode button](previews/5-scream.png)
+</details>
+
+---
+
+File: `5-mode.js`
