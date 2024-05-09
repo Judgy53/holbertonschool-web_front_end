@@ -19,6 +19,7 @@ Tasks:
 - [4. Complex Closure](#4-complex-closure)
 - [5. Changing DOM with closure](#5-changing-dom-with-closure)
 - [6. Private methods with closure](#6-private-methods-with-closure)
+- [7. Stack order and setTimeout](#7-stack-order-and-settimeout)
 
 
 ## 0. Lexical scoping and welcome message
@@ -230,3 +231,25 @@ Draco: -2
 ---
 
 File: `6-hogwarts.js`
+
+## 7. Stack order and setTimeout
+- Log to the console `Start of the execution queue`
+- Log to the console `Final code block to be executed` using `setTimeout` (with delay of 0)
+- Using a loop that iterates 100 times, each iteration logs to the console the iteration number
+- Log to the console `End of the loop printing`
+
+**Test:**
+- Your code should log to the console the following:
+```js
+Start of the execution queue
+1
+2
+...
+100
+End of the loop printing
+Final code block to be executed
+```
+
+---
+
+File: `7-timeout.js`
