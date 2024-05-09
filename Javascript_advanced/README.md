@@ -14,6 +14,7 @@ Topics covered :
 Tasks:
 - [0. Lexical scoping and welcome message](#0-lexical-scoping-and-welcome-message)
 - [1. Closure Scope Chain](#1-closure-scope-chain)
+- [2. Closure](#2-closure)
 
 
 ## 0. Lexical scoping and welcome message
@@ -59,3 +60,30 @@ File: `0-welcome.js`
 ---
 
 File: `1-nested_functions.js`
+
+## 2. Closure 
+Write a function named `welcomeMessage`:
+- It accepts one argument `fullName` (string)
+- It should be a closure for an alert displaying `Welcome <fullName>`
+
+After this function definition, create three variables:
+- `guillaume` contains a call `welcomeMessage` with `Guillaume` as argument
+- `alex` contains a call `welcomeMessage` with `Alex` as argument
+- `fred` contains a call `welcomeMessage` with `Fred` as argument
+
+**Test:**
+- Copy paste your code in the “Console” of your web browser.
+- Executing the following in the console:
+```js
+guillaume();
+alex();
+fred();
+```
+Should display three alerts with the following content:
+- Welcome Guillaume
+- Welcome Alex
+- Welcome Fred
+
+---
+
+File: `2-function_me.js`
