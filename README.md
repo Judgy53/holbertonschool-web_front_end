@@ -23,3 +23,6 @@ Project where we learn about `WCAG`, `ARIA`, and how to implement them in a webs
 
 ## Bootstrap
 Project where we learn the basics of the CSS framework Bootstrap.
+
+## Javascript_advanced
+Project where we learn advanced Javascript syntax and techniques.
