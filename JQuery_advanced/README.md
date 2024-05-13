@@ -17,6 +17,7 @@ Tasks:
 - [3. Chain DOM elements](#3-chain-dom-elements)
 - [4. HTML function](#4-html-function)
 - [5. Click attribute and remove function](#5-click-attribute-and-remove-function)
+- [6. Val, before, and prepend functions](#6-val-before-and-prepend-functions)
 
 ## 0. Setup your dev environment
 **Modify the starter file:**
@@ -141,8 +142,7 @@ File: `0-index.html`
 
 ## 5. Click attribute and remove function
 
-**In a file `5-index.html`, reuse the template you created previously.**
-
+**Reuse the template you created previously.**
 - Remove the `createFamilyTree` and `replaceFamilyTree` functions
 - Create a function `createFamilyTree`:
     - It should append to the `body` an empty table, with `thead` and two cells with text `Firstname` and `Lastname`, respectively
@@ -171,3 +171,30 @@ File: `0-index.html`
 ---
 
 - File: `5-index.html`
+
+## 6. Val, before, and prepend functions
+
+**Reuse the template you created previously.**
+- Reuse the function `createFamilyTree` you wrote in the previous task
+- Reuse the function `addNewMember` you wrote in the previous task, and add the following modification:
+    - The function should accept a new argument `position`(string)
+    - When position is equal to `before`, it should add the row at the top of the table
+    - Otherwise, it should add the row at the bottom of the table
+- Write a function `createForm`:
+    - It should add before the table two `input` of type `text`
+    - It should add a `select` with two options as well: `before` and `after` with corresponding `Before` and `After` text
+    - It should add a `input` of type `submit` as well
+        - When the user clicks on the submit, it should call the function `addNewMember` with the value of the two inputs and the value of the select element
+- Call the function `createFamilyTree`
+- Call the function `createForm`
+
+**Requirements:**
+- You must use the keywords `first`, `before`, and `prepend`
+- To select the second input, use the `nth-of-type` selector
+
+**The form created by your script should look like this:**
+![Expected Result](previews/6.png)
+
+---
+
+- File: `6-index.html`

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+    <head>
+
+        <meta charset="utf-8" />
+        <title>Task 6</title>
+        <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>
+        <script type="application/javascript">
+            function createFamilyTree() {
+                $('body').append($('<table>').append(
+                    $('<thead>').append($('<tr>').append(
+                        $('<th>').text('Firstname'),
+                        $('<th>').text('Lastname')
+                    )),
+                    $('<tbody>')
+                ));
+            }
+
+            function addNewMember(firstName, lastName, position) {
+                const newRow = $('<tr>').append(
+                    $('<td>').text(firstName),
+                    $('<td>').text(lastName),
+                    $('<td>').text('(x)').css('background-color', 'orange').on('click', function() {
+                        $(this).parent().remove();
+                    })
+                );
+
+                if (position === 'before')
+                    $('tbody').prepend(newRow);
+                else
+                    $('tbody').append(newRow);
+            }
+
+            function createForm() {
+                $('table').before(
+                    $('<input>').attr('type', 'text'),
+                    $('<input>').attr('type', 'text'),
+                    $('<select>').append(
+                        $('<option>').attr('value', 'before').text('Before'),
+                        $('<option>').attr('value', 'after').text('After')
+                    ),
+                    $('<input>').attr('type', 'submit').on('click', function() {
+                        addNewMember($('input').first().val(), $('input:nth-of-type(2)').val(), $('select').val())
+                    })
+                );
+            }
+
+            $.when( $.ready ).then(function() {
+                createFamilyTree();
+                createForm();
+            });
+        </script>
+    </head>
+
+    <body>
+
+    </body>
+
+</html>
