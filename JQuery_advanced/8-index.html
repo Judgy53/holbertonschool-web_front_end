@@ -4,7 +4,7 @@
     <head>
 
         <meta charset="utf-8" />
-        <title>Task 7</title>
+        <title>Task 8</title>
         <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
         <script type="application/javascript">
             function createSearchForm() {
@@ -13,7 +13,8 @@
                     $('<input>').attr('type', 'submit').on('click', function() {
                         queryWikipedia($('input[type=text]').val());
                     }),
-                    $('<ul>')
+                    $('<ul>'),
+                    $('<ul>').attr('id', 'pagination')
                 )
             }
 
@@ -27,12 +28,14 @@
                 ));
             }
 
-            function queryWikipedia(search) {
+            function queryWikipedia(search, offset = 0) {
                 const searchData = {
                     action: 'query',
                     list: 'search',
                     srprop: 'snippet',
                     srsearch: search,
+                    sroffset: offset,
+                    srlimit: 10,
                     format: 'json',
                     origin: '*'
                 };
@@ -42,11 +45,33 @@
                     data: searchData,
                     dataType: 'json'
                 }).done(function(json) {
+                    $('ul').first().empty();
                     for (let i = 0; i < json.query.search.length; i++) {
                         const entry = json.query.search[i];
                         addNewArticle(entry.pageid, entry.title, entry.snippet);
                     }
+                    buildPagination(json.query.searchinfo.totalhits, 10, offset);
                 });
+            }
+
+            function buildPagination(numberOfItems, itemsPerPage, currentOffset) {
+                const $paginationElem = $('ul#pagination');
+                $paginationElem.empty();
+
+                const maxPage = Math.ceil(numberOfItems / itemsPerPage);
+                for (let i = 0; i < maxPage; i++) {
+                    const offset = itemsPerPage * i;
+                    const entry = $('<li>').text(i+1).css({
+                        display: 'inline',
+                        cursor: 'pointer',
+                        marginLeft: '10px',
+                        fontWeight: (offset === currentOffset ? 'bold': 'normal')
+                    }).on('click', function() {
+                        queryWikipedia($('input[type=text]').val(), offset);
+                    });
+
+                    $paginationElem.append(entry);
+                }
             }
 
             $.when( $.ready ).then(function() {

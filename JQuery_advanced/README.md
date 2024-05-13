@@ -18,7 +18,8 @@ Tasks:
 - [4. HTML function](#4-html-function)
 - [5. Click attribute and remove function](#5-click-attribute-and-remove-function)
 - [6. Val, before, and prepend functions](#6-val-before-and-prepend-functions)
-- [7. Query](#7-query)
+- [7. Ajax](#7-ajax)
+- [8. Pagination](#8-pagination)
 
 ## 0. Setup your dev environment
 **Modify the starter file:**
@@ -200,7 +201,7 @@ File: `0-index.html`
 
 - File: `6-index.html`
 
-## 7. Query
+## 7. Ajax
 
 **Reuse the template you created in the previous task**
 - Remove the functions from the `script`
@@ -240,3 +241,35 @@ File: `0-index.html`
 ---
 
 - File: `7-index.html`
+
+## 8. Pagination
+
+**Reuse the code from the previous task**
+
+- Modify the function `createSearchForm`:
+    - It should append to the body another list, with the id `pagination`
+- Modify the function `queryWikipedia`:
+    - Add a new parameter named `offset`(number)
+    - By default, the offset should be set to `0`
+    - Modify the data object to add the `offset`
+    - When you receive the response from the API, call the function `buildPagination` that you are going to create below
+- Create a new function named `buildPagination`:
+    - It accepts three arguments `numberOfItems`(number), `itemsPerPage`(number), and `currentOffset`(number)
+    - When the function is called, reset the pagination list to an empty tag
+    - Write a loop that will display the pagination (using the total number of items divided by the number of items per page)
+    - For each page, create a list item
+        - Add some CSS for each item (`cursor: 'pointer'`, `10px` margin left, and bold when this is the current page)
+        - The text of the item should be the page number
+        - When clicking on a page number, it should call the function `queryWikipedia` with the right offset
+
+**Requirements:**
+- Use the `totalhits` value from Wikipedia to define the total number of items
+- Display 10 items per page
+- Make sure your pages are displayed in an horizontal line
+
+**The query results should display like this, notice how the `12` is in bold, because that is the current page**
+![Expected result](previews/8.png)
+
+---
+
+- File: `8-index.html`
