@@ -18,6 +18,7 @@ Tasks:
 - [4. HTML function](#4-html-function)
 - [5. Click attribute and remove function](#5-click-attribute-and-remove-function)
 - [6. Val, before, and prepend functions](#6-val-before-and-prepend-functions)
+- [7. Query](#7-query)
 
 ## 0. Setup your dev environment
 **Modify the starter file:**
@@ -198,3 +199,44 @@ File: `0-index.html`
 ---
 
 - File: `6-index.html`
+
+## 7. Query
+
+**Reuse the template you created in the previous task**
+- Remove the functions from the `script`
+- Import jQuery using the CDN and make sure you can access the ajax methods
+    
+- Create a form:
+    - Create a function `createSearchForm`, it should append to the body:
+        - An empty `input` of type `text` without ID, name, or class
+        - An `input` of type `submit`
+            - When the user clicks on the submit button, it should query the function `queryWikipedia` that you are going to create with the value of the text `input`
+        - An empty `ul` element
+- Create a function `addNewArticle` to add new items to a list
+    - It accepts three arguments `id`(string), `title`(string), and `snippet`(string)
+    - It create an element `li`
+        - Within the `li`, add two `paragraph` elements
+            - The first paragraph contains a `span` tag with the following text: `id -`, then a `b` element with the `title`
+            - The second paragraph, should contain the `snippet`
+    - Appends the `li` to the `ul` element (created by `createSearchForm`)
+- Implement a get function: create a function `queryWikipedia`
+    - It accepts one argument `search`(string)
+    - Create a data object with attributes required to query a search using the string passed in the argument with Wikipedia
+    - For each result returned by the API, call the function `addNewArticle` with the result’s `pageid`, `title`, and `snippet`
+- Call the function `createSearchForm` when the page loads
+    
+
+**Requirements:**
+- Look at the documentation from Wikipedia to query the API `https://www.mediawiki.org/wiki/API:Search`
+- Use the minified only version of jQuery, so you can access the ajax methods
+- When adding the `snippet`, make sure that the HTML coming from Wikipedia is correctly displayed
+
+**The form created by your script should look like this:**
+![](previews/7-form.png)
+
+**Query results should display like this:**
+![](previews/7-query.png)
+
+---
+
+- File: `7-index.html`

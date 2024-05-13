@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+    <head>
+
+        <meta charset="utf-8" />
+        <title>Task 6</title>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script type="application/javascript">
+            function createSearchForm() {
+                $('body').append(
+                    $('<input>').attr('type', 'text'),
+                    $('<input>').attr('type', 'submit').on('click', function() {
+                        queryWikipedia($('input[type=text]').val());
+                    }),
+                    $('<ul>')
+                )
+            }
+
+            function addNewArticle(id, title, snippet) {
+                $('ul').append($('<li>').append(
+                    $('<p>').append(
+                        $('<span>').text(`${id} - `),
+                        $('<b>').text(title)
+                    ),
+                    $('<p>').html(snippet)
+                ));
+            }
+
+            function queryWikipedia(search) {
+                const searchData = {
+                    action: 'query',
+                    list: 'search',
+                    srprop: 'snippet',
+                    srsearch: search,
+                    format: 'json',
+                    origin: '*'
+                };
+
+                $.ajax({
+                    url: 'https://en.wikipedia.org/w/api.php',
+                    data: searchData,
+                    dataType: 'json'
+                }).done(function(json) {
+                    for (let i = 0; i < json.query.search.length; i++) {
+                        const entry = json.query.search[i];
+                        addNewArticle(entry.pageid, entry.title, entry.snippet);
+                    }
+                });
+            }
+
+            $.when( $.ready ).then(function() {
+                createSearchForm();
+            });
+        </script>
+    </head>
+
+    <body>
+
+    </body>
+
+</html>
