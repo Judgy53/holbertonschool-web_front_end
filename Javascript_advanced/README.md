@@ -27,6 +27,7 @@ Tasks:
 - [12. Binding](#12-binding)
 - [13. Binding + Closure](#13-binding--closure)
 - [14. Simple callback](#14-simple-callback)
+- [15. Multiple callbacks](#15-multiple-callbacks)
 
 
 ## 0. Lexical scoping and welcome message
@@ -411,3 +412,35 @@ Call `queryWikipedia` with `createElement` as callback
 ---
 
 - File: `14-wikipedia.js`
+
+## 15. Multiple callbacks
+
+Create a variable named `stock`:
+- It contains the stock for the items you are selling
+- It’s a dictionary with the values `macbook: 2` and `iphone: 4`
+
+Write a new function named `processPayment`:
+- It accepts one argument `itemName` (String)
+- It change the stock, by removing one item of the stock for the item passed in argument
+- It logs to the console the text `Payment is being processed for item <itemName>`
+
+Write a new function named `processError`:
+- It accepts one argument `itemName` (String)
+- It logs to the console the text `No more <itemName> in stock`
+- It logs to the console the text `Payment is not being processed`
+
+Write a new function named `processOrder`:
+- It accepts three arguments `itemName` (String), `callbackPayment` (function), and `callbackError` (function)
+- It logs to the console the text `Verifying the stock of <itemName>`
+- If there is enough stock for the item, it calls `callbackPayment`
+- If there is not enough stock for the item, it calls `callbackError`
+
+Prompt to the user the message `Please enter the item you would like to purchase (Macbook, iPhone)` and pass the right callbacks
+
+**Requirements:**
+- Make sure that the case is not creating a problem (e.g `MacBOok` should still work)
+- Make sure that items that are not offered get the correct message
+
+---
+
+- File: `100-stock.js`
