@@ -23,6 +23,7 @@ Tasks:
 - [8. Stack order in functions](#8-stack-order-in-functions)
 - [9. Prime numbers \& timing execution](#9-prime-numbers--timing-execution)
 - [10. Execution stack \& timing execution](#10-execution-stack--timing-execution)
+- [11. Changing stack order using setTimeout](#11-changing-stack-order-using-settimeout)
 
 
 ## 0. Lexical scoping and welcome message
@@ -325,3 +326,17 @@ Reuse the function `countPrimeNumbers` from `9-prime.js` (copy/paste)
 ---
 
 - File: `10-prime.js`
+
+## 11. Changing stack order using setTimeout
+
+Reuse the function `countPrimeNumbers` from `10-prime.js` (copy/paste)
+- Log to the console the time in milleseconds to execute the function 100 times
+- Find a way to actually do most of the calculation at the end of the execution stack
+
+**Requirements:**
+- Your code should display something in the range of `Execution time of calculating prime numbers 100 times was 0.03999999910593033 milliseconds.`
+- Use `setTimeout` keyword to change the stack order
+
+---
+
+- File: `11-prime.js`
