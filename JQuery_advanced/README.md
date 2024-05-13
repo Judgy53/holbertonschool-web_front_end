@@ -15,6 +15,7 @@ Tasks:
 - [1. Creating a DOM element](#1-creating-a-dom-element)
 - [2. Creating multiple DOM elements at once](#2-creating-multiple-dom-elements-at-once)
 - [3. Chain DOM elements](#3-chain-dom-elements)
+- [4. HTML function](#4-html-function)
 
 ## 0. Setup your dev environment
 **Modify the starter file:**
@@ -118,3 +119,21 @@ File: `0-index.html`
 ---
 
 - File: `3-index.html`
+
+## 4. HTML function
+
+**Reuse the template you created in the previous task. Reuse also the function named `createFamilyTree`.**
+- Create a new function `replaceFamilyTree`:
+    - It should replace the childrens of the `tbody` elements with a new `tr`
+    - The `tr` element should contain two cells with `Gerard` and `Bonissa` in each
+- Make sure `createFamilyTree` and `replaceFamilyTree` are called
+
+**Requirements:**
+- You must use the keyword `html` to replace the content of the table
+
+**The table created by your script should look like this**
+![Expected Result](previews/4.png)
+
+---
+
+- File: `4-index.html`
