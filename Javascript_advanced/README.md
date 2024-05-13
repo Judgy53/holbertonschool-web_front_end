@@ -21,6 +21,7 @@ Tasks:
 - [6. Private methods with closure](#6-private-methods-with-closure)
 - [7. Stack order and setTimeout](#7-stack-order-and-settimeout)
 - [8. Stack order in functions](#8-stack-order-in-functions)
+- [9. Prime numbers \& timing execution](#9-prime-numbers--timing-execution)
 
 
 ## 0. Lexical scoping and welcome message
@@ -294,3 +295,19 @@ All the orders have been processed
 ---
 
 - File: `8-payments.js`
+
+## 9. Prime numbers & timing execution
+
+Write a function named `countPrimeNumbers`:
+- It will return the number of prime numbers from 2 to 100
+
+Log to the console the time in milliseconds to execute the function in this format: `Execution time of printing countPrimeNumbers was <time used> milliseconds.`
+
+**Requirements:**
+
+- You must use `performance` API to measure the time needed to execute the function (`performance.now()`)
+- Your code should display something in the range of `Execution time of printing countPrimeNumbers was 0.2700000002514571 milliseconds.`
+
+---
+
+- File: `9-prime.js`
