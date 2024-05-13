@@ -25,6 +25,7 @@ Tasks:
 - [10. Execution stack \& timing execution](#10-execution-stack--timing-execution)
 - [11. Changing stack order using setTimeout](#11-changing-stack-order-using-settimeout)
 - [12. Binding](#12-binding)
+- [13. Binding + Closure](#13-binding--closure)
 
 
 ## 0. Lexical scoping and welcome message
@@ -358,3 +359,30 @@ Create a variable named `boundGetArea`, that will bind the object `roomDimension
 ---
 
 - File: `12-room_area.js`
+
+## 13. Binding + Closure
+
+Write an object `user` with the attributes:
+- `hobby`: `Calligraphy`
+- `favoriteSport`: `Hockey`
+- `astrologicalSign`: `Aries`
+- `firstName`: `Buillaume`
+- `lastName`: `Johns`
+- `location`: `Netherlands`
+- `occupation`: `Engineer`
+
+Create a function named `logWelcomeUser`:
+- It takes one argument `welcomeString` (String)
+- It logs to the console `<welcomeString>, <firstName>. Your occupation is: <occupation>`
+
+Create a variable named `bindLogWelcomeUser`. It binds the `logWelcomeUser` function to the `user` object.
+
+Call the function with the string `Welcome`
+
+**Test:**
+- Your code should display `Welcome, undefined. Your occupation is: undefined`
+- Calling `bindLogWelcomeUser('Hello');` should return `Hello, Buillaume. Your occupation is: Engineer`
+
+---
+
+- File: `13-bind_user.js`
