@@ -26,3 +26,6 @@ Project where we learn the basics of the CSS framework Bootstrap.
 
 ## Javascript_advanced
 Project where we learn advanced Javascript syntax and techniques.
+
+## JQuery_advanced
+Project where we learn how to load and use JQuery.
