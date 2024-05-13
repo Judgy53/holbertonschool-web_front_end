@@ -21,6 +21,7 @@ Tasks:
 - [7. Ajax](#7-ajax)
 - [8. Pagination](#8-pagination)
 - [9. Wrap/unwrap](#9-wrapunwrap)
+- [10. Another Get API](#10-another-get-api)
 
 ## 0. Setup your dev environment
 **Modify the starter file:**
@@ -300,3 +301,106 @@ File: `0-index.html`
 ---
 
 - File: `9-index.html`
+
+## 10. Another Get API
+
+**Setup your dev environment**
+
+- Install `json-server` within your projects using `npm`:
+- Run the server using `node_modules/.bin/json-server --watch db.json`
+
+**You are provided with a starter `db.json`, you can change the values of the `id`, `title`, `author`, `postId`, `name` as you like**
+
+**Reuse the code from the previous task**
+- Remove the functions in your `script` and the `style` in the head
+- Make sure you import jQuery using the CDN and make sure you can access the ajax methods
+- Create a function `addPostRow`:
+    - It takes into argument `data` (object)
+    - It append to the body a paragraph
+    - The paragraph should contain a `span` element with the text `Post created with id ID, title: TITLE, author: AUTHOR`
+        - Each variable is contained in the `data` object
+- Create a function named `listPosts`:
+    - It should query your local server on the `posts` endpoint
+    - When the server return a 200 response, it should call the function `addPostRow` for each element in the response
+    - When the server is unavailable, display an alert with the message `Server Error`
+- Call the function `listPosts` when your page loads
+
+**Requirements:**
+- You must use the `get` function from jQuery
+
+---
+
+<details>
+<summary>Starter db.json</summary>
+
+```json
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "title": "fd",
+      "author": "fffff",
+      "id": 2
+    },
+    {
+      "title": "fd",
+      "author": "fffff",
+      "id": 3
+    },
+    {
+      "title": "f",
+      "author": "f",
+      "id": 4
+    },
+    {
+      "title": "",
+      "author": "",
+      "id": 5
+    },
+    {
+      "title": "",
+      "author": "",
+      "id": 6
+    },
+    {
+      "title": "",
+      "author": "",
+      "id": 7
+    },
+    {
+      "title": "",
+      "author": "",
+      "id": 8
+    },
+    {
+      "title": "",
+      "author": "",
+      "id": 9
+    },
+    {
+      "title": "",
+      "author": "",
+      "id": 10
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
+```
+</details>
+
+---
+
+- File: `10-index.html, db.json`
