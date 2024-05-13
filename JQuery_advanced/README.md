@@ -16,6 +16,7 @@ Tasks:
 - [2. Creating multiple DOM elements at once](#2-creating-multiple-dom-elements-at-once)
 - [3. Chain DOM elements](#3-chain-dom-elements)
 - [4. HTML function](#4-html-function)
+- [5. Click attribute and remove function](#5-click-attribute-and-remove-function)
 
 ## 0. Setup your dev environment
 **Modify the starter file:**
@@ -137,3 +138,36 @@ File: `0-index.html`
 ---
 
 - File: `4-index.html`
+
+## 5. Click attribute and remove function
+
+**In a file `5-index.html`, reuse the template you created previously.**
+
+- Remove the `createFamilyTree` and `replaceFamilyTree` functions
+- Create a function `createFamilyTree`:
+    - It should append to the `body` an empty table, with `thead` and two cells with text `Firstname` and `Lastname`, respectively
+    - It should append an empty `tbody` element to the `table` after the `thead`
+- Create a function `addNewMember`:
+    - It accepts two arguments `firstName`(string) and `lastName`(string)
+    - It appends to the body of the `table` a new row with three cells
+    - The first cell displays the `firstName`, the second cell displays the `lastName`
+    - The third cell displays `(x)`
+    - On click on the third cell, it should remove the row
+    - Add CSS to the third cell to have an `orange` background
+- Calls the function `createFamilyTree`
+- Using `addNewMember`, generate a fake table with:
+    - the first row `Guillaume`, `Salva`
+    - the second row `Arielle`, `Snizt`
+    - the third row `Fanette`, `Snizt`
+    - the fourth row `Gerard`, `Snizt`
+    - the fifth row `Victor`, `Salva`
+
+**Requirements:**
+- You must use the keywords `click`, `css`, and `remove`
+
+**The table created by your script should look like this:**
+![Expected result](previews/5.png)
+
+---
+
+- File: `5-index.html`
