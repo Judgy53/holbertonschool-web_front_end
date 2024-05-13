@@ -24,6 +24,7 @@ Tasks:
 - [9. Prime numbers \& timing execution](#9-prime-numbers--timing-execution)
 - [10. Execution stack \& timing execution](#10-execution-stack--timing-execution)
 - [11. Changing stack order using setTimeout](#11-changing-stack-order-using-settimeout)
+- [12. Binding](#12-binding)
 
 
 ## 0. Lexical scoping and welcome message
@@ -340,3 +341,20 @@ Reuse the function `countPrimeNumbers` from `10-prime.js` (copy/paste)
 ---
 
 - File: `11-prime.js`
+
+## 12. Binding
+
+Create an object named `roomDimensions` with the following three attributes:
+- `width`: `50`
+- `length`: `100`
+- `getArea`: function that returns the surface area of a the object using the `width` and `length`
+
+Create a variable named `boundGetArea`, that will bind the object `roomDimensions` to the `getArea` function
+
+**Test:**
+- Copy paste your code in the “Console” of your web browser.
+- Executing `boundGetArea()` in the console should return `5000`.
+
+---
+
+- File: `12-room_area.js`
