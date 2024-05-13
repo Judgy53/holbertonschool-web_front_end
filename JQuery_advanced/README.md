@@ -13,6 +13,7 @@ Topics covered:
 Tasks:
 - [0. Setup your dev environment](#0-setup-your-dev-environment)
 - [1. Creating a DOM element](#1-creating-a-dom-element)
+- [2. Creating multiple DOM elements at once](#2-creating-multiple-dom-elements-at-once)
 
 ## 0. Setup your dev environment
 **Modify the starter file:**
@@ -70,3 +71,27 @@ File: `0-index.html`
 ---
 
 - File: `1-index.html`
+
+## 2. Creating multiple DOM elements at once
+**Reuse the template you created previously.**
+- Remove the function `createTextElement`
+- Create a function named `createFamilyTree`:
+    - It should create a table element
+        - The head of the table should display `Firstname` and `Lastname` in two cells
+        - The body of the table should three rows
+        - The first row should contain two cells with `Guillaume` and `Salva`
+        - The second row should contain two cells with `Paulette` and `Salva`
+        - The third row should contain two cells with `Antoine` and `Salva`
+    - Use the keyword `append` only once to attach all the elements of the table to the page
+- Call the `createFamilyTree` function
+
+**Requirements:**
+- You must use jQuery only to generate the HTML tag and attach it to the page
+- The entire table code should be contained in one string
+
+**The table created by your script should look like this**
+![Expected result](previews/2.png)
+
+---
+
+- File: `2-index.html`
