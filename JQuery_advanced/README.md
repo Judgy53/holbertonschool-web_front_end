@@ -14,6 +14,7 @@ Tasks:
 - [0. Setup your dev environment](#0-setup-your-dev-environment)
 - [1. Creating a DOM element](#1-creating-a-dom-element)
 - [2. Creating multiple DOM elements at once](#2-creating-multiple-dom-elements-at-once)
+- [3. Chain DOM elements](#3-chain-dom-elements)
 
 ## 0. Setup your dev environment
 **Modify the starter file:**
@@ -95,3 +96,25 @@ File: `0-index.html`
 ---
 
 - File: `2-index.html`
+
+## 3. Chain DOM elements
+
+**Reuse the template you created previously. Reuse also the function named `createFamilyTree`:**
+- The table is containing the exact same values as the previous task
+- This time, create each element one by one
+- Use the keywords `append` for each element and `text` for the cells
+- Do not create any intermediate variable
+- Call the `createFamilyTree` function
+
+**Tips:**
+- You can append multiple elements at once, by separating the elements with a comma
+
+**Requirements:**
+- You must use jQuery only to generate the HTML tag and attach it to the page
+
+**The table created by your script should look like this**
+![Expected result](previews/2.png)
+
+---
+
+- File: `3-index.html`
