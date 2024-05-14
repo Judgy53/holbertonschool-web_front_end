@@ -100,6 +100,7 @@ File: `0-index.html`
 - The entire table code should be contained in one string
 
 **The table created by your script should look like this**
+
 ![Expected result](previews/2.png)
 
 ---
@@ -122,6 +123,7 @@ File: `0-index.html`
 - You must use jQuery only to generate the HTML tag and attach it to the page
 
 **The table created by your script should look like this**
+
 ![Expected result](previews/2.png)
 
 ---
@@ -140,6 +142,7 @@ File: `0-index.html`
 - You must use the keyword `html` to replace the content of the table
 
 **The table created by your script should look like this**
+
 ![Expected Result](previews/4.png)
 
 ---
@@ -172,6 +175,7 @@ File: `0-index.html`
 - You must use the keywords `click`, `css`, and `remove`
 
 **The table created by your script should look like this:**
+
 ![Expected result](previews/5.png)
 
 ---
@@ -199,6 +203,7 @@ File: `0-index.html`
 - To select the second input, use the `nth-of-type` selector
 
 **The form created by your script should look like this:**
+
 ![Expected Result](previews/6.png)
 
 ---
@@ -237,10 +242,12 @@ File: `0-index.html`
 - When adding the `snippet`, make sure that the HTML coming from Wikipedia is correctly displayed
 
 **The form created by your script should look like this:**
-![](previews/7-form.png)
+
+![Expected Result for the form](previews/7-form.png)
 
 **Query results should display like this:**
-![](previews/7-query.png)
+
+![Expected Result for the query results](previews/7-query.png)
 
 ---
 
@@ -272,6 +279,7 @@ File: `0-index.html`
 - Make sure your pages are displayed in an horizontal line
 
 **The query results should display like this, notice how the `12` is in bold, because that is the current page**
+
 ![Expected result](previews/8.png)
 
 ---
