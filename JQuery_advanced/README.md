@@ -22,6 +22,7 @@ Tasks:
 - [8. Pagination](#8-pagination)
 - [9. Wrap/unwrap](#9-wrapunwrap)
 - [10. Another Get API](#10-another-get-api)
+- [11. Post query](#11-post-query)
 
 ## 0. Setup your dev environment
 **Modify the starter file:**
@@ -404,3 +405,33 @@ File: `0-index.html`
 ---
 
 - File: `10-index.html, db.json`
+
+## 11. Post query
+
+**Reuse the code you previously wrote**
+- Create a new function `buildForm`:
+    - It appends to the body a `form` element
+    - Inside the form, add a `div` element, with a `label` for `author` with text `Author` and an `input` of type `text` with id `author`
+    - Inside the form, add a `div` element, with a `label` for `title` with text `Title` and a `textarea` with id `title`
+    - Inside the form, add an `input` of type `submit`
+    - When clicking on the submit button, call the function `sendForm` detailed below
+- Create a new function `sendForm`:
+    - It should add after the `form`, the text `About to send the query to the API`
+    - It should create a data object, with the `title` and `author` attributes. The values are the ones within the inputs
+    - It should send a `POST` query to your server endpoint `posts` with the data
+    - If the query succeed, call the function `addPostRow` with the data coming back from the API
+    - If the query does not succeed, it should display an alert with the message `Error sending the POST query`
+- Call the functions `listPosts` and `buildForm` when your page loads
+
+**Requirements:**
+- When clicking on the label, the input text should be selected by the browser
+- When pressing enter on the input text, the form should be submitted without reloading the page
+- You must use the `after` function from jQuery
+
+**With the JSON server running, your `11-index.html` should look something like this in your browser (does not have to be exactly the same, rows and values depend on what’s in your `db.json`)**
+
+![Expected Result](previews/11.png)
+
+---
+
+- File: `11-index.html, db.json`
