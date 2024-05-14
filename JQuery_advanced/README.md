@@ -23,6 +23,7 @@ Tasks:
 - [9. Wrap/unwrap](#9-wrapunwrap)
 - [10. Another Get API](#10-another-get-api)
 - [11. Post query](#11-post-query)
+- [12. Delete query](#12-delete-query)
 
 ## 0. Setup your dev environment
 **Modify the starter file:**
@@ -435,3 +436,27 @@ File: `0-index.html`
 ---
 
 - File: `11-index.html, db.json`
+
+## 12. Delete query
+
+**Reuse your code from the previous task**
+- Modify the function `addPostRow`:
+    - Add an id attribute to the paragraph with `row-ID` (the ID being the one of the post)
+    - Append a `span` element with the text `(delete)` to the `p`, this `span` should come before the `span` with the post information
+        - On click, call the function `deletePost` with the post id
+- Create a function `deletePost`:
+    - It accepts one argument `id`(number)
+    - Send a `DELETE` query to the `posts` endpoint with the id of the post
+    - If the query is successful, remove the row from the body
+    - If the query is not successful, display an alert with the message `Post was not deleted`
+
+**Requirements:**
+- You must use the function `remove` from jQuery
+
+**With your JSON server running, `12-index.html` should look like this in your browser, actual rows and values depend on what’s in your `db.json`**
+
+![Expected Result](previews/12.png)
+
+---
+
+- File: `12-index.html, db.json`
