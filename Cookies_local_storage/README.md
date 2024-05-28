@@ -15,6 +15,7 @@ Tasks:
 - [2. Read cookie](#2-read-cookie)
 - [3. Delete cookie and mini application](#3-delete-cookie-and-mini-application)
 - [4. Use js-cookie](#4-use-js-cookie)
+- [5. Local storage](#5-local-storage)
 
 ## 0. Create basic cookie
 **Install your development environment:**
@@ -121,3 +122,35 @@ Tasks:
 - Build the Welcome message with Javascript without using HTML
 - Use `js-cookie` for every cookie manipulation
 - File: `4-index.html`
+
+## 5. Local storage
+**Let’s build a basic shopping cart in a new file. Setup your files with the following:**
+- Create an array `availableItems` that will contain all the available items. Add the strings `Shampoo`, `Soap`, `Sponge`, and `Water` in the array
+- If Local storage is not enabled on your browser, display an alert that will contain the message `Sorry, your browser does not support Web storage. Try again with a better one`
+- If local storage is available it should allow the user to see the application and call the function `createStore` and `displayCart`
+
+**Create a function `addItemToCart`:**
+- It takes on argument `item` (string)
+- It adds a key to the local storage of the name of the item, and set the value to `true`
+
+**Create a function `createStore`:**
+- Create a `ul` and append it to the DOM
+- Loop through the array of items, and create a list item to add to the `ul`
+- The item should display the name of the available product
+- On click the item should call the function `addItemToCart`
+
+**Create a function `displayCart`:**
+- If the local storage does not contain any item, this function does not do anything
+- If the local storage contains any item, it should display the message `You previously had X items in your cart` in a `p` element that you can append to the body
+
+**Tips:**
+- At this time, you should be able to see the list of available items
+- If you click on two of them and refresh the browser, you should see the message `You previously had 2 items in your cart`
+- If you open a new tab, you should also see the message `You previously had 2 items in your cart`
+
+**Requirements:**
+- Build the DOM using Javascript only
+- You must use the local storage of your browser and not a cookie or session storage
+- Access your code with `http://localhost:8080/5-index.html`
+- Build every feature with vanilla Javascript only
+- File: `5-index.html`
