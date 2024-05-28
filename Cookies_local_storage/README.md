@@ -9,6 +9,10 @@ Topics Covered:
 - How to use the browser web storage
 - The differences between local storage and session storage
 
+Tasks:
+- [0. Create basic cookie](#0-create-basic-cookie)
+- [1. Create cookie with expiration date and specific path](#1-create-cookie-with-expiration-date-and-specific-path)
+
 ## 0. Create basic cookie
 **Install your development environment:**
 
@@ -39,3 +43,13 @@ Topics Covered:
 - Use vanilla javascript to complete the task
 
 - File: `package.json, src/index.js, 0-index.html`
+
+## 1. Create cookie with expiration date and specific path
+**In a file `1-index.html`:**
+- Reuse the code of the previous task
+- Modify the way you are setting cookies to expire in 10 days
+
+**Requirements:**
+- Access your code with `http://localhost:8080/1-index.html`
+- Use vanilla javascript to complete the task
+- File: `1-index.html`
