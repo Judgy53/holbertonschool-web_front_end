@@ -17,6 +17,7 @@ Tasks:
 - [4. Use js-cookie](#4-use-js-cookie)
 - [5. Local storage](#5-local-storage)
 - [6. Session storage](#6-session-storage)
+- [7. Advanced use of web storage](#7-advanced-use-of-web-storage)
 
 ## 0. Create basic cookie
 **Install your development environment:**
@@ -170,3 +171,61 @@ Reusing the code from the previous task, replace the use of local storage by ses
 - Access your code with `http://localhost:8080/6-index.html`
 - Build every feature with vanilla Javascript only
 - File: `6-index.html`
+
+## 7. Advanced use of web storage
+**In a new file, let’s build a more advanced cart system using Session Storage. Setup your files with the following:**
+- Create an array `availableItems` that will contain all the available items. Add the strings `Shampoo`, `Soap`, `Sponge`, and `Water` to the array
+- If session storage is not enabled on your browser, display an alert that will contain the message `Sorry, your browser does not support Web storage. Try again with a better one`
+- If session storage is available it should allow the user to see the application and call the function `createStore` and `displayCart`
+
+**Create a function `getCartFromStorage`:**
+- It should parse a string into a JSON object, returning the content of the cart stored in Session storage
+- If there is no cart, it should return an empty object
+
+**Create a function `addItemToCart`:**
+- It accepts `item`(string) as argument
+- It adds to the cart object the item
+- If the same item is added multiple times, the cart store the quantity
+- It stores the value of the cart object in a string for the key `cart` in the Session Storage
+- It calls `displayCart`
+
+**Create a function `removeItemfromCart`:**
+- It accepts `item`(string) as argument
+- It remove the entire item from the cart
+- Store the value of the cart object in a string for the key `cart` in the Session Storage
+- It calls `displayCart`
+
+**Create a function `clearCart`:**
+- It should clear the entire Session storage
+- it calls `displayCart`
+
+**Create a function `createStore`:**
+- It should add a `h2` tag with the text `Available products:`
+- It should add a list with every item available for purchase
+- When the user click on an item, it should add it to the cart
+
+**Create a function `displayCart`:**
+- It should add inside a `h2` tag with the text `Your cart:`
+- It should add an empty `div` tag
+- If the `div` tag already exist, it should remove any list child
+- It calls updateCart
+
+**Create a function `updateCart`:**
+- It should add a list to the `div` tag created previously
+- If the cart is empty, it should add an item `Your cart is empty`
+- If the cart is not empty, it should add the list of items within the cart with the following format: `ITEM_NAME x QUANTITY (remove)`
+- When the user clicks on remove, it should call the function `removeItemfromCart`
+- At the top of the cart, add an item named `Clear my cart`. When the user clicks on it, it should call the function `clearCart`
+
+**Tips:**
+- You can look at the GIF below to see how the interaction with the different elements works
+
+![Expected output interactions](previews/7.gif "Expected output interactions")
+
+**Requirements:**
+- Build the DOM using Javascript only
+- You must use the session storage of your browser and not a cookie or local storage
+- Access your code with `http://localhost:8080/7-index.html`
+- Build every feature with vanilla Javascript only
+- `src/index.js` should stay empty - all your Javascript must be in your HTML, inside `<script>` tag
+- File: `7-index.html`
