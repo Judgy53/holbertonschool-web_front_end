@@ -14,6 +14,7 @@ Tasks:
 - [1. Create cookie with expiration date and specific path](#1-create-cookie-with-expiration-date-and-specific-path)
 - [2. Read cookie](#2-read-cookie)
 - [3. Delete cookie and mini application](#3-delete-cookie-and-mini-application)
+- [4. Use js-cookie](#4-use-js-cookie)
 
 ## 0. Create basic cookie
 **Install your development environment:**
@@ -107,3 +108,16 @@ Tasks:
 **When a user is logged in the page should look like the image below**
 
 ![Logged In](previews/3-logged.png "Logged In")
+
+## 4. Use js-cookie
+**Reusing the code from the previous task:**
+- Add `js-cookie` to your html page using the `jsdelivr` CDN
+- Delete the `getCookie` function and use `js-cookie` get function instead
+- Use `js-cookie` remove function within `deleteCookiesAndShowForm` function
+- Use `js-cookie` set function within `setCookiesAndShowWelcomeMessage` function (new function that sets cookies and calls `showWelcomeMessageOrForm`)
+
+**Requirements:**
+- Access your code with `http://localhost:8080/4-index.html`
+- Build the Welcome message with Javascript without using HTML
+- Use `js-cookie` for every cookie manipulation
+- File: `4-index.html`
