@@ -29,3 +29,6 @@ Project where we learn advanced Javascript syntax and techniques.
 
 ## JQuery_advanced
 Project where we learn how to load and use JQuery.
+
+## Cookies_local_storage
+Project where we learn how to create cookies and manipulate the browser's local storage.
