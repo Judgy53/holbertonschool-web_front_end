@@ -16,6 +16,7 @@ Tasks:
 - [3. Delete cookie and mini application](#3-delete-cookie-and-mini-application)
 - [4. Use js-cookie](#4-use-js-cookie)
 - [5. Local storage](#5-local-storage)
+- [6. Session storage](#6-session-storage)
 
 ## 0. Create basic cookie
 **Install your development environment:**
@@ -154,3 +155,18 @@ Tasks:
 - Access your code with `http://localhost:8080/5-index.html`
 - Build every feature with vanilla Javascript only
 - File: `5-index.html`
+
+## 6. Session storage
+Reusing the code from the previous task, replace the use of local storage by session storage
+
+**Tips:**
+- At this time, you should be able to see the list of available items
+- If you click on two of them and refresh the browser, you should see the message `You previously had 2 items in your cart`
+- If you open a new tab, you should not see any message
+
+**Requirements:**
+- Build the DOM using Javascript only
+- You must use the session storage of your browser and not a cookie or local storage
+- Access your code with `http://localhost:8080/6-index.html`
+- Build every feature with vanilla Javascript only
+- File: `6-index.html`
